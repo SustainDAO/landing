@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SustainDAO</title>
+    <style>
+        body {
+            background:#020202;
+        }
+        div#logo {
+            width:100%;
+            height:90vh;
+            display:grid;
+            place-items:center;            
+
+            /* display:flex;
+            justify-content: center;
+            align-items:center; */
+
+
+            /* margin:300px auto; */
+            background:#020202;
+            /* background:#FFFFFF; */
+        }
+        #video {
+            border-radius: 50px;
+            margin:0px;
+            padding:0px;
+        }
+        #coming-soon {
+            width:500px;
+            height:500px;
+            border:2px solid #2B2B2B;
+            border-radius: 24px;
+            color:#FFFFFF;
+            font-size:30px; 
+        }
+    </style>
+
+</head>
+<body>
+    <div id="logo">
+        <video muted width="480" height="480" autoplay id="video">
+            <source src="logo.webm" type="video/webm">
+            Your browser does not support HTML video.
+        </video>
+        <div id="coming-soon">Coming Soon</div>
+    </div>
+</body>
+    <script>
+        var vid = document.getElementById("video");
+        vid.onloadeddata = function () {
+            alert("Browser has loaded the current frame");
+        };
+    </script>
+</html>
