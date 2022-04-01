@@ -5,57 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SustainDAO</title>
-    <style>
-        body {
-            background:#020202;
-        }
-        * {
-            margin:0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .container{
-            height:90vh;
-            display:grid;
-            place-items:center;            
-        }
-        #video-mask{
-            border-radius: 50px; 
-            overflow: hidden;
-            width: 450px;
-            max-height: 100%;
-        }
-        #video {
-             border-radius: 50px;
-            width:100%;
-        }
-        @media screen and (max-width:600px){
-            #video-mask{
-                width: fit-content;
-            }
-        }
-        #coming-soon {
-            width:500px;
-            height:500px;
-            border:2px solid #2B2B2B;
-            border-radius: 24px;
-            color:#FFFFFF;
-            font-size:30px; 
-        }
-    </style>
-
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/favicon.ico"/>
 </head>
 <body>
     <div class="container">
         <div id="video-mask">
             <video muted playsinline autoplay id="video">
-                <!-- <source src="logo.webm" type="video/webm"> -->
                 <source src="logo.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
             <!-- <div id="coming-soon">Coming Soon</div> -->
         </div>
+            <div class="loaded-container">
+                <div class="loaded-content">
+                    <h3>Coming soon</h3>
+                    <div class="logo-wrapper">
+                        <p class="join-us">To begin contributing please join us</p>
+                        <div class="images">
+                            <img src="./assets/icons/twitter.png" />
+                            <img src="./assets/icons/discord.png" />
+                            <img src="./assets/icons/github.png" />
+                            <!-- <img src="./assets/icons/youtube.png" /> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
+
+
 </body>
     <script>
         var vid = document.getElementById("video");

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Bold'), local('Helvetica-Now-Display-Bold'),
+        url('../fonts/HelveticaNowDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNowDisplay-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNowDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Regular'), local('Helvetica-Now-Display-Regular'),
+        url('../fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/HelveticaNowDisplay-Regular.woff') format('woff'),
+        url('../fonts/HelveticaNowDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: #020202;
+    /* font-family: 'Helvetica Now Display'; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:16px;
+    gap:5px;
+}
+
+.images{
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    padding-left:10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+#video-mask {
+    border-radius: 50px;
+    overflow: hidden;
+    width: 450px;
+    max-height: 100%;
+}
+
+#video {
+    border-radius: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    #video-mask {
+        width: fit-content;
+    }
+}
+
+#coming-soon {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #2B2B2B;
+    border-radius: 24px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.loaded-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    min-height:20vh;
+    align-items:center;
+}
+
+.loaded-content {
+    /* opacity:0; */
+    padding:1rem;
+    /* background: red; */
+    border-radius: 24px;
+    border:1px Solid #2B2B2B;
+    color: #fff;
+    text-align: left;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    padding-top:24px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.loaded-content h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.join-us{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 29px;
+}
