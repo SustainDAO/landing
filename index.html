@@ -9,25 +9,29 @@
         body {
             background:#020202;
         }
-        div#logo {
-            width:100%;
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
             height:90vh;
             display:grid;
             place-items:center;            
-
-            /* display:flex;
-            justify-content: center;
-            align-items:center; */
-
-
-            /* margin:300px auto; */
-            background:#020202;
-            /* background:#FFFFFF; */
+        }
+        #video-mask{
+            border-radius: 50px; 
+            overflow: hidden;
+            width: 450px;
+            max-height: 100%;
         }
         #video {
-            border-radius: 50px;
-            margin:0px;
-            padding:0px;
+            width:100%;
+        }
+        @media screen and (max-width:500px){
+            #video-mask{
+                width: fit-content;
+            }
         }
         #coming-soon {
             width:500px;
@@ -41,13 +45,15 @@
 
 </head>
 <body>
-    <div id="logo">
-        <video muted width="480" height="480" autoplay playsinline id="video">
-            <source src="logo.webm" type="video/webm">
-            <source src="logo.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-        </video>
-        <!-- <div id="coming-soon">Coming Soon</div> -->
+    <div class="container">
+        <div id="video-mask">
+            <video muted autoplay id="video">
+                <source src="logo.webm" type="video/webm">
+                <source src="logo.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <!-- <div id="coming-soon">Coming Soon</div> -->
+        </div>
     </div>
 </body>
     <script>
