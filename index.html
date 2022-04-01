@@ -42,9 +42,9 @@
 </head>
 <body>
     <div id="logo">
-        <video muted width="480" height="480" autoplay id="video">
+        <video muted width="480" height="480" autoplay playsinline id="video">
             <source src="logo.webm" type="video/webm">
-            <source src="logo.mp4" type="video/webm">
+            <source src="logo.mp4" type="video/mp4">
             Your browser does not support HTML video.
         </video>
         <!-- <div id="coming-soon">Coming Soon</div> -->
@@ -55,5 +55,6 @@
         vid.onloadeddata = function () {
             // alert("Browser has loaded the current frame");
         };
+
     </script>
 </html>
