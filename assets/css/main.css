@@ -19,8 +19,8 @@
 
 body {
     background: #020202;
-    /* font-family: 'Helvetica Now Display'; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Now Display';
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .logo-wrapper{
@@ -110,4 +110,15 @@ body {
     font-weight: 400;
     font-size: 19px;
     line-height: 29px;
+}
+
+.comingsoon {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.comingsoonvisible {
+    visibility: visible;
+    opacity: 1;
 }

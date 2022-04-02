@@ -17,7 +17,7 @@
             </video>
             <!-- <div id="coming-soon">Coming Soon</div> -->
         </div>
-            <div class="loaded-container">
+            <div class="loaded-container comingsoon" id="comingsoon">
                 <div class="loaded-content">
                     <h3>Coming soon</h3>
                     <div class="logo-wrapper">
@@ -38,6 +38,10 @@
     <script>
         var vid = document.getElementById("video");
         vid.onloadeddata = function () {
+            setTimeout(() => {
+                var comingsoon = document.getElementById("comingsoon");
+                comingsoon.classList.add("comingsoonvisible");
+            }, 6300)
             // alert("Browser has loaded the current frame");
         };
 
