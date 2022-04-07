@@ -99,9 +99,26 @@ summary::marker{
     margin-top: -15rem;
 }
 
+.page-header__animation .mobile{
+    display: none;
+}
+
 @media screen and (max-width:1400px) {
-    .page-header__animation{
+    .page-header__animation .desktop{
         display: none;
+    }
+    .page-header__animation .mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .page-header{
+        flex-direction: column;
+    }
+    .page-header__animation{
+        width: 100%;
+        padding-left: 5rem;
     }
 }
 
@@ -143,9 +160,26 @@ summary::marker{
 }
 
 .join-us{
-    height: 80px;
     box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
     margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem;
+    color:#fff;
+    align-items: center;
+}
+
+.join-us__text p{
+    font-family: 'Helvetica Now Display Bold';
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.015em;
+}
+
+.icons{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
 }
 
 input {
@@ -200,6 +234,7 @@ input {
     font-size: 16px;
     line-height: 24px;
 }
+
 
 
 /* input:checked + .tab-label {
