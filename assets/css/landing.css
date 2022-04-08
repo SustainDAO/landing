@@ -42,6 +42,9 @@ input {
     z-index: -1;
 }
 
+button{
+    -webkit-appearance: none;
+}
 
 /*Main styles*/
 
@@ -66,7 +69,7 @@ input {
 }
 
 .page-header__content{
-    margin-top: 16rem;
+    margin-top: 12rem;
     margin-left:6rem;
     color:#fff;
 }
@@ -84,22 +87,24 @@ input {
 }
 
 .page-header__content__description p{
-    font-size: 32px;
-    line-height: 47px;
+    font-size: 26px;
+    line-height: 36px;
 }
 
 .page-header__content__button {
-    margin-top: 2rem;
+    margin-top: 24px;
 }
 
-.page-header__content__button button{
-    padding:20px 58px;
+#learn-more{
+    padding:15px 40px;
     background-color: #ABE581;
     font-family: 'Helvetica Now Display Bold';
     border:none;
     outline:none;
     cursor: pointer;
     font-size: 24px;
+    border-radius: 1.5rem;
+    color: #2B2B2B;
 }
 .page-header__animation{
     width: 1050px;
@@ -117,8 +122,14 @@ input {
 
 .faq-container{
     color:#fff;
-    max-width: 850px;
-    margin: 3rem auto;
+    max-width: 880px;
+    margin: 0px auto;
+    padding: 0 2rem;
+}
+
+.join-us__wrapper{
+    margin: 0px auto;
+    max-width: 880px;
     padding: 2rem;
 }
 
@@ -126,8 +137,8 @@ input {
     padding: 40px;
 }
 
-.faq-questions p {
-    font-size: 24px;
+.faq-questions .title {
+    font-size: 25px;
     line-height: 35px;
 }
 
@@ -153,7 +164,6 @@ input {
 
 .join-us{
     box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
-    margin-top: 3.5rem;
     display: flex;
     justify-content: space-between;
     padding:1.5rem;
@@ -217,9 +227,9 @@ input {
     transition: all 0.35s;
 }
 
-.tab-content p{
+.paragraph{
     font-size: 16px;
-    line-height: 24px;
+    line-height: 25px;
 }
 
 
@@ -280,12 +290,21 @@ input:checked ~ .tab-label{
     .page-header__content h1{
         font-size: 4rem;
     }
-    .page-header__content__button button{
+    #learn-more{
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width:700px){
+    .faq-questions .title{
+        font-size: 18px !important;
+    }
+    .faq-container{
+        padding: 0;
+    }
+    .faq-questions{
+        border-radius: 0;
+    }
     .main-content{
         margin-top: -25rem;
     }
@@ -313,7 +332,9 @@ input:checked ~ .tab-label{
     }
     .faq-questions p {
         font-size: 1rem !important;
-        line-height: 26px !important;
+    }
+    .faq-questions .title{
+        line-height: 26px;
     }
     .tabs {
         margin-top: 1rem !important;
