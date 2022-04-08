@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SustainDAO</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/favicon.ico"/>
+</head>
+<body>
+    <div class="container">
+        <div id="video-mask">
+            <video muted playsinline autoplay id="video">
+                <source src="logo.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <!-- <div id="coming-soon">Coming Soon</div> -->
+        </div>
+            <div class="loaded-container comingsoon" id="comingsoon">
+                <div class="loaded-content">
+                    <h3>Coming soon</h3>
+                    <div class="logo-wrapper">
+                        <p class="join-us">To begin contributing please join us</p>
+                        <div class="images">
+                            <a href="https://twitter.com/sustaindao" target="_blank"><img src="./assets/icons/twitter.svg" /></a>
+                            <a href="https://discord.com/invite/rSnzWhGAS8" target="_blank"><img src="./assets/icons/discord.svg" /></a>
+                            <a href="https://github.com/SustainDAO" target="_blank"><img src="./assets/icons/github.svg" /></a>
+                            <!-- <img src="./assets/icons/youtube.png" /> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+</body>
+    <script>
+        var vid = document.getElementById("video");
+        vid.onloadeddata = function () {
+            setTimeout(() => {
+                var comingsoon = document.getElementById("comingsoon");
+                comingsoon.classList.add("comingsoonvisible");
+            }, 6300)
+            // alert("Browser has loaded the current frame");
+        };
+
+    </script>
+</html>
