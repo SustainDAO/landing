@@ -79,10 +79,11 @@ button{
     font-size: 4.5rem;
     line-height: 3rem;
     letter-spacing: -0.015em;
+    line-height: 72px;
 }
 
 .page-header__content__description{
-    max-width: 720px;
+    max-width: 620px;
     margin-top: 1rem;
 }
 
