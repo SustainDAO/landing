@@ -122,6 +122,7 @@ button{
 
 .main-content{
     z-index: 1;
+    position: relative;
 }
 
 .faq-container{
@@ -245,16 +246,16 @@ button{
   .answer {
     padding: 1rem;
     line-height: 25px;
+    position: relative;
   }
 
 
- .paragraph::before{
+  .answer::before{
     content:'';
-    display: none;
     position: absolute;
-    top:-16px;
-    left:0;
-    width: 100%;
+    top: 5px;
+    left: 15px;
+    width: 95%;
     height: 1px;
     background-color: #fff;
 }
@@ -292,7 +293,7 @@ button{
         width: 100%;
         padding-left: 5rem;
         margin-top: 4rem;
-        z-index:-1;
+        z-index:0;
     }
     .mobile{
         clip-path: inset(0 57% 0 0);
@@ -360,7 +361,7 @@ button{
         gap: 1rem;
     }
     .icons{
-        gap:3rem;
+        gap:1rem;
         justify-content: space-between;
     }
     .icons img{
