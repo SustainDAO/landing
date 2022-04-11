@@ -96,12 +96,14 @@ button{
 }
 
 #learn-more{
-    padding:15px 40px;
+    width: 180px;
+    height: 48px;
     font-family: 'Helvetica Now Display Bold';
-    border:none;
-    outline:none;
+    border: none;
+    outline: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 18px;
     border-radius: 20px;
     color: #2B2B2B;
     background: linear-gradient(213.12deg, #ABE581 26.52%, #8CDBE2 111.08%);
@@ -138,7 +140,7 @@ button{
 }
 
 .faq-questions .title {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 35px;
 }
 
@@ -190,7 +192,7 @@ button{
     overflow: hidden;
     display: grid;
     grid-gap:1rem;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
 }
 .tab {
     width: 100%;
@@ -200,7 +202,7 @@ button{
 .tab-label {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 11px 16px;
     background: #323232;
     font-weight: bold;
     cursor: pointer;
@@ -234,7 +236,7 @@ button{
     content:'';
     display: none;
     position: absolute;
-    top:-20px;
+    top:-16px;
     left:0;
     width: 100%;
     height: 2px;
@@ -256,7 +258,7 @@ input:checked + .tab-label::after {
     transform: rotate(90deg);
 }
 input:checked ~ .tab-content {
-    max-height: 120vh;
+    max-height: 200rem;
     padding: 1em;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -310,9 +312,6 @@ input:checked ~ .tab-label{
     .page-header__content h1{
         font-size: 4rem;
     }
-    #learn-more{
-        font-size: 1rem;
-    }
     .main-content{
         margin-top: -48rem;
     }
@@ -321,6 +320,7 @@ input:checked ~ .tab-label{
 @media screen and (max-width:700px){
     .faq-questions .title{
         font-size: 18px !important;
+        line-height: 26px;
     }
     .faq-container{
         padding: 0;
@@ -355,9 +355,6 @@ input:checked ~ .tab-label{
     }
     .faq-questions p {
         font-size: 1rem !important;
-    }
-    .faq-questions .title{
-        line-height: 26px;
     }
     .tabs {
         margin-top: 1rem !important;
