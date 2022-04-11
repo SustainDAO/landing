@@ -29,19 +29,13 @@
 
 body {
     background-color: rgb(31,31,31);
-    position: relative;
-}
 
-.gradient-wrapper{
-    background: conic-gradient(from 0deg at 50% 62.83%, #1F1F1F -112.52deg,
-     #1F1F1F 0.02deg, #2B2B2B 115.91deg, 
-    #8CDAE5 169.98deg, #ABE581 191.66deg, #1F1F1F 247.48deg, #1F1F1F 360.02deg);
-    padding-bottom: 3rem;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 
 button{
     -webkit-appearance: none;
@@ -84,7 +78,7 @@ button{
 }
 
 .page-header__content__description{
-    max-width: 495px;
+    max-width: 620px;
     margin-top: 1rem;
 }
 
@@ -98,17 +92,19 @@ button{
 }
 
 #learn-more{
-    width: 241px;
-    height: 64px;
+    width: 180px;
+    height: 48px;
     font-family: 'Helvetica Now Display Bold';
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 18px;
     border-radius: 20px;
     color: #2B2B2B;
     background: linear-gradient(213.12deg, #ABE581 26.52%, #8CDBE2 111.08%);
+    -webkit-tap-highlight-color: transparent; 
+
 }
 .page-header__animation{
     width: 1050px;
@@ -122,19 +118,18 @@ button{
 
 .main-content{
     z-index: 1;
-    position: relative;
 }
 
 .faq-container{
     color:#fff;
-    max-width: 944px;
+    max-width: 880px;
     margin: 0px auto;
     padding: 0 2rem;
 }
 
 .join-us__wrapper{
     margin: 0px auto;
-    max-width: 944px;
+    max-width: 880px;
     padding: 2rem;
 }
 
@@ -197,6 +192,17 @@ button{
     grid-gap:1rem;
     margin-top: 2rem;
 }
+
+ .answer::before{
+    content:'';
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 95%;
+    height: 1px;
+    background-color: #fff;
+}
+
 .container {
     color: white;
     overflow: hidden;
@@ -244,34 +250,12 @@ button{
   }
   
   .answer {
+      position: relative;
     padding: 1rem;
     line-height: 25px;
-    position: relative;
   }
 
 
-  .answer::before{
-    content:'';
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    width: 95%;
-    height: 1px;
-    background-color: #fff;
-}
-
-.paragraph{
-    position: relative;
-    font-size: 16px;
-    line-height: 25px;
-}
-
-.answer a,
-.answer a:any-link
-{
-    text-decoration: none;
-    color:#8CDAE5;
-}
 
 
 /*Responsive styles*/
@@ -293,7 +277,7 @@ button{
         width: 100%;
         padding-left: 5rem;
         margin-top: 4rem;
-        z-index:0;
+        z-index:-1;
     }
     .mobile{
         clip-path: inset(0 57% 0 0);
@@ -302,15 +286,11 @@ button{
     .page-header__content__description {
         max-width: 600px;
     }
-    .page-header__content__description p{
-        font-size: 1.5rem;
-        line-height: 33px;
-    }
     .page-header__content h1{
         font-size: 4rem;
     }
     .main-content{
-        margin-top: -48rem;
+        margin-top: -56rem;
     }
 }
 
@@ -361,7 +341,7 @@ button{
         gap: 1rem;
     }
     .icons{
-        gap:1rem;
+        gap:3rem;
         justify-content: space-between;
     }
     .icons img{
