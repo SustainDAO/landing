@@ -177,7 +177,7 @@ button{
     border: 1px solid #464646;
 }
 
-.join-us__text p{
+.join-us p{
     font-family: 'Helvetica Now Display Bold';
     font-size: 20px;
     line-height: 29px;
@@ -244,27 +244,15 @@ button{
   }
   
   .answer {
-    padding: 1rem;
+    padding: 0.4rem 1rem 1rem 1rem;
     line-height: 25px;
     position: relative;
   }
 
-
-  .answer::before{
-    content:'';
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    width: 95%;
-    height: 1px;
-    background-color: #fff;
-}
-
-.paragraph{
-    position: relative;
-    font-size: 16px;
-    line-height: 25px;
-}
+  .answer p{
+    border-top: 1px solid #F2F2F5;
+    padding-top: 1rem;
+  }
 
 .answer a,
 .answer a:any-link
@@ -369,8 +357,11 @@ button{
         height: 35px;
         object-fit: contain;
     }
-    .join-us__text p{
+    .join-us p{
         font-size: 1.1rem;
+    }
+    .join-us__wrapper{
+        padding: 20px;
     }
     .faq-questions{
         padding:1.5rem;
