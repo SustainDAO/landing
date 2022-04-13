@@ -33,7 +33,7 @@ body {
 }
 
 .gradient-wrapper{
-    background: conic-gradient(from 0deg at 50% 62.83%, #1F1F1F -112.52deg,
+    background: conic-gradient(from 0deg at 50% 68.83%, #1F1F1F -112.52deg,
      #1F1F1F 0.02deg, #2B2B2B 115.91deg, 
     #8CDAE5 169.98deg, #ABE581 191.66deg, #1F1F1F 247.48deg, #1F1F1F 360.02deg);
     padding-bottom: 3rem;
@@ -173,7 +173,6 @@ button{
     justify-content: space-between;
     padding:1.5rem;
     color:#fff;
-    align-items: center;
     border: 1px solid #464646;
 }
 
@@ -197,7 +196,7 @@ button{
     grid-gap:1rem;
     margin-top: 2rem;
 }
-.container {
+.tabs .container {
     color: white;
     overflow: hidden;
     border: 2px solid #464646;
@@ -262,6 +261,106 @@ button{
 }
 
 
+
+#roadmap {
+    position: relative;
+    color:#fff;
+    margin: 1.5rem 15rem 6rem 15rem;
+}
+
+#roadmap h1{
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+  #roadmap .container {
+    position: relative;
+  }
+
+  .ps-timeline::after{
+    top: -10px;
+    right: -145px;
+    content: 'DAO Governance';
+    position: absolute;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 200px;
+
+  }
+  li::marker{
+      content:none;
+  }
+  
+  .ps-timeline {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(#ABE581, #8CE5CC);
+  }
+  .ps-timeline li {
+    float: left;
+    width: 33%;
+    padding-top: 30px;
+    position: relative;
+  }
+  .ps-timeline li span {
+    box-shadow: 0 0 0 0px #fff;
+    text-align: center;
+    line-height: 50px -10;
+    font-style: normal;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+  
+  .ps-sp-bot:before {
+    content: '';
+    width: 3px;
+    height: 50px;
+    background: radial-gradient(50% 190.67% at 50% -54.1%, #ABE581 0%, #8CE5CC 100%);
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+  }
+  .ps-sp-bot:after {
+    content: '';
+    color: #8CE5CC;
+    width: 25px;
+    height: 25px;
+    background: #8CE5CC;
+    position: absolute;
+    top: 48px;
+    right: -14px;
+    border-radius: 100%;
+  }
+  
+
+  .ps-timeline li p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+    .ps-bot {
+    margin: 60px auto;
+    text-align: center;
+    max-width: 355px;
+  }
+  
+   .ps-bot h3{
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+
 /*Responsive styles*/
 
 @media screen and (max-width:1400px) {
@@ -297,8 +396,83 @@ button{
     .page-header__content h1{
         font-size: 4rem;
     }
-    .main-content{
-        margin-top: -48rem;
+    .ps-timeline::after {
+        top: 102%;
+        left: 0px;
+    }
+
+    .gradient-wrapper{
+        background: none;
+    }
+
+    .ps-timeline {
+      margin: 0 !important;
+      height: 38rem;
+      flex-direction: column;
+      padding-top: 4rem;
+      border-left: 3px solid;
+      border-image-slice: 1;
+      border-image-source: radial-gradient(#ABE581, #8CE5CC);
+      border-top: 0 !important;
+    }
+    .ps-timeline li {
+      float: none !important;
+      width: inherit !important;
+    }
+   
+    .ps-timeline li:last-child {
+      margin: 0;
+      bottom: 0 !important;
+      height: 120px;
+    }
+
+    .ps-timeline li span {
+      left: 22px !important;
+    }
+    .ps-timeline li {
+        height: 33.3%;
+        position: relative;
+    }
+    .ps-bot{
+        position: absolute;
+        right: -45px;
+        top: -50px;
+        width: 90%;
+    }
+    .ps-timeline li span.ps-sp-bot:before {
+        transform: rotate(90deg);
+    }
+    .ps-sp-bot:after{
+        top: 13px;
+        right: -50px;
+    }
+    .ps-timeline li p {
+      text-align: left !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      margin-top: 0px !important;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    #roadmap{
+        margin: 1.5rem 8rem 6rem 8rem;
+    }
+    .ps-bot h3,
+    .ps-bot i
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .join-us{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
     }
 }
 
@@ -313,9 +487,7 @@ button{
     .faq-questions{
         border-radius: 0;
     }
-    .main-content{
-        margin-top: -23rem;
-    }
+
     .logo{
         margin: 3rem auto;
         display: flex;
@@ -344,10 +516,7 @@ button{
     .tabs {
         margin-top: 1rem !important;
     }
-    .join-us{
-        flex-direction: column;
-        gap: 1rem;
-    }
+
     .icons{
         gap:1rem;
         justify-content: space-between;
@@ -358,7 +527,7 @@ button{
         object-fit: contain;
     }
     .join-us p{
-        font-size: 1.1rem;
+        font-size: 16px;
     }
     .join-us__wrapper{
         padding: 20px;
@@ -366,10 +535,49 @@ button{
     .faq-questions{
         padding:1.5rem;
     }
+    #roadmap h1{
+        font-size: 36px;
+        margin-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    #roadmap{
+        margin: -28rem 0 6rem 0 !important;
+        padding: 0 3rem;
+        background: #1F1F1F;
+    }
 }
 
 @media screen and (max-width:450px) {
     .page-header__content__description {
         max-width: 300px;
+    }
+    .icons{
+        display: grid;
+        gap: 2rem 2.5rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width:550px) {
+    #roadmap {
+        padding: 1rem;
+    }
+    .ps-bot{
+        right: 130px;
+        top: -50px;
+        max-width: 260px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .ps-bot{
+        left:30%;
+        max-width: 200px;
+    }
+}
+@media screen and (min-width:1900px){
+    #roadmap{
+        margin: 6rem 15rem;
     }
 }
