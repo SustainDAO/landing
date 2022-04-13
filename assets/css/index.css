@@ -349,6 +349,8 @@ button{
     max-width: 355px;
     cursor: pointer;
     transition: 0.4s ease;
+    -webkit-tap-highlight-color: transparent; 
+
 }
 
     .ps-bot:hover{
@@ -461,6 +463,9 @@ button{
     {
         font-size: 18px;
         line-height: 26px;
+    }
+    .ps-bot {
+        pointer-events: none;
     }
 }
 
