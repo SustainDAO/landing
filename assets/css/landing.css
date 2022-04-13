@@ -318,6 +318,17 @@ button{
     top: 0px;
     left: 50%;
 }
+.ps-bot {
+    margin: 60px auto;
+    text-align: center;
+    max-width: 355px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+    .ps-bot:hover{
+        transform: scale(1.1);
+    }
   
   .ps-sp-bot:before {
     content: '';
