@@ -33,7 +33,7 @@ body {
 }
 
 .gradient-wrapper{
-    background: conic-gradient(from 0deg at 50% 62.83%, #1F1F1F -112.52deg,
+    background: conic-gradient(from 0deg at 50% 68.83%, #1F1F1F -112.52deg,
      #1F1F1F 0.02deg, #2B2B2B 115.91deg, 
     #8CDAE5 169.98deg, #ABE581 191.66deg, #1F1F1F 247.48deg, #1F1F1F 360.02deg);
     padding-bottom: 3rem;
