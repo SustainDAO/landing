@@ -173,7 +173,6 @@ button{
     justify-content: space-between;
     padding:1.5rem;
     color:#fff;
-    align-items: center;
     border: 1px solid #464646;
 }
 
@@ -263,20 +262,20 @@ button{
 
 
 
-.ps-timeline-sec {
+#roadmap {
     position: relative;
     color:#fff;
-    margin: 24rem 15rem;
+    margin: 1.5rem 15rem 6rem 15rem;
 }
 
-.ps-timeline-sec h1{
+#roadmap h1{
     text-align: center;
     margin-bottom: 100px;
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
 }
-  .ps-timeline-sec .container {
+  #roadmap .container {
     position: relative;
   }
 
@@ -402,6 +401,10 @@ button{
         left: 0px;
     }
 
+    .gradient-wrapper{
+        background: none;
+    }
+
     .ps-timeline {
       margin: 0 !important;
       height: 38rem;
@@ -453,14 +456,23 @@ button{
 }
 
 @media screen and (max-width:900px) {
-    .ps-timeline-sec{
-        margin:12rem 8rem;
+    #roadmap{
+        margin: 1.5rem 8rem 6rem 8rem;
     }
     .ps-bot h3,
     .ps-bot i
     {
         font-size: 18px;
         line-height: 26px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .join-us{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
     }
 }
 
@@ -504,10 +516,7 @@ button{
     .tabs {
         margin-top: 1rem !important;
     }
-    .join-us{
-        flex-direction: column;
-        gap: 1rem;
-    }
+
     .icons{
         gap:1rem;
         justify-content: space-between;
@@ -518,7 +527,7 @@ button{
         object-fit: contain;
     }
     .join-us p{
-        font-size: 1.1rem;
+        font-size: 16px;
     }
     .join-us__wrapper{
         padding: 20px;
@@ -526,17 +535,32 @@ button{
     .faq-questions{
         padding:1.5rem;
     }
+    #roadmap h1{
+        font-size: 36px;
+        margin-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    #roadmap{
+        margin: -28rem 0 6rem 0 !important;
+        padding: 0 3rem;
+        background: #1F1F1F;
+    }
 }
 
 @media screen and (max-width:450px) {
     .page-header__content__description {
         max-width: 300px;
     }
+    .icons{
+        display: grid;
+        gap: 2rem 2.5rem;
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 @media screen and (max-width:550px) {
-    .ps-timeline-sec {
-        margin: 6rem 1rem;
+    #roadmap {
+        padding: 1rem;
     }
     .ps-bot{
         right: 130px;
@@ -550,5 +574,10 @@ button{
     .ps-bot{
         left:30%;
         max-width: 200px;
+    }
+}
+@media screen and (min-width:1900px){
+    #roadmap{
+        margin: 6rem 15rem;
     }
 }

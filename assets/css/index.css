@@ -122,14 +122,14 @@ button{
 
 .faq-container{
     color:#fff;
-    max-width: 880px;
+    max-width: 944px;
     margin: 0px auto;
     padding: 0 2rem;
 }
 
 .join-us__wrapper{
     margin: 0px auto;
-    max-width: 880px;
+    max-width: 944px;
     padding: 2rem;
 }
 
@@ -504,7 +504,7 @@ button{
         object-fit: contain;
     }
     .join-us p{
-        font-size: 1.1rem;
+        font-size: 16px;
     }
     .join-us__wrapper{
         padding: 20px;
