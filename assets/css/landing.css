@@ -298,6 +298,7 @@ button{
     border-bottom: none;
     border-image-slice: 1;
     border-image-source: radial-gradient(#ABE581, #8CE5CC);
+    list-style: none;
   }
   .ps-timeline li {
     float: left;
@@ -409,8 +410,7 @@ button{
       flex-direction: column;
       padding-top: 4rem;
       border-left: 3px solid;
-      border-image-slice: 1;
-      border-image-source: radial-gradient(#ABE581, #8CE5CC);
+      border-image-slice: 0 0 0 1;
       border-top: 0 !important;
     }
     .ps-timeline li {
