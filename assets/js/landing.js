@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => { 
   let button = document.querySelector("#learn-more");
   button.onclick = () => {
-    let ios = isIOS();
-    doScrolling("#main", ios ? 1000 : 50);
+    let os = getMobileOS()
+    doScrolling("#main", os === 'Iphone' ? 300 : os === "iOS" ? 1000 : 50);
   };
-  
-  function isIOS() {
-    return (
-      [
-        "iPad Simulator",
-        "iPhone Simulator",
-        "iPod Simulator",
-        "iPad",
-        "iPhone",
-        "iPod",
-      ].includes(navigator.platform) ||
-      // iPad on iOS 13 detection
-      (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-    );
+
+
+  const getMobileOS = () => {
+    const ua = navigator.userAgent
+    if (/android/i.test(ua)) {
+      return "Android"
+    }
+    if(/iPhone/.test(ua)){
+      return "Iphone"
+    }
+    else if (/iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)){
+      return "iOS"
+    }
+    return "Other"
   }
   
   function getElementY(query) {
