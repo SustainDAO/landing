@@ -269,7 +269,7 @@ button{
 #roadmap {
     position: relative;
     color:#fff;
-    margin: 1.5rem 19rem 6rem;
+    margin: 1.5rem 17rem 6rem;
 }
 
 #roadmap h1{
@@ -633,7 +633,7 @@ button{
 }
 @media screen and (min-width:1900px){
     #roadmap{
-        margin: 6rem 20rem;
+        margin: 6rem 18rem;
     }
 }
 
