@@ -13,7 +13,8 @@ module.exports = {
       'primary': '#ABE581',
       'secondary': '#8CDAE5',
       'gray': '#F2F2F5',
-      'black-smoke': '#2B2B2B'
+      'black-smoke': '#2B2B2B',
+      'gray-light': '#464646'
     },
     minWidth: {
       '0': '0',
@@ -57,6 +58,7 @@ module.exports = {
       'lsm': '35rem',
       'md': '40rem',
       'lg': '50rem',
+      'xlg': '59rem',
       'xl': '60rem',
       '2xl': '70rem',
       '3xl': '80rem',
