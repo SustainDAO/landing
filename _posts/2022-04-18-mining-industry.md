@@ -1,6 +1,8 @@
 ####Some of the requirements might be challenging for smaller publicly-traded miners to comply with, however.
 [**By Aoyon Ashraf**](https://www.coindesk.com/author/aoyon-ashraf/
 )
+
+
 !['image'](../../../assets/images/posts/img3.jpeg)
 *Marathon Digital CEO Fred Thiel at the Bitcoin 2021 conference in Miami, Florida*
 

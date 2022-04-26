@@ -72,6 +72,7 @@ module.exports = {
       'screen': '100vh',
       '14': '3.5rem',
       '48': '12rem',
+      '64':'34rem'
     },
     screens: {
       'xsm': '480px',
