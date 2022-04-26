@@ -74,12 +74,13 @@ module.exports = {
       '48': '12rem',
     },
     screens: {
-      'xsm': '420px',
+      'xsm': '480px',
       'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1300px',
-      '2xl': '1536px',
+      'tablet': '720px',
+      'laptop': '1024px',
+      'desktop': '1270px',
+      'screen':'1420px',
+      'screen-lg': '1536px',
     },
     fontSize: {
       'xs': '.75rem', // 12px
@@ -108,6 +109,21 @@ module.exports = {
       '2xl': '1.25rem',
       '3xl': '1.5rem',
       'full': '9999px'
+    },
+    lineHeight: {
+      '3': '.75rem',
+      '4': '1rem',
+      '5': '1.25rem',
+      '6': '1.5rem',
+      '7': '1.75rem',
+      '8': '2rem',
+      '9': '2.25rem',
+      '10': '2.5rem',
+      '11': '3rem',
+      '12': '3.5rem',
+      '13': '4rem',
+      '14': '4.5rem',
+      '15': '5rem',
     },
     fontFamily: {
       'display': ['"Helvetica Now Display"', 'sans-serif'],

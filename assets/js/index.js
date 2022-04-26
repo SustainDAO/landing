@@ -70,4 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
+  document.querySelector('.article-btn').onclick = () => {
+    window.location.href = '/articles';
+  }
 })

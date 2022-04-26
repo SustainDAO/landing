@@ -3,16 +3,18 @@ layout: default
 title: SustainDAO
 ---
 
-<section class="page-header flex justify-between">
-    <div class="text-white ml-24 mt-48">
-        <h1 class="text-6.5xl tracking-[-0.015em] font-bold leading-[4.5rem] font-display-bold">SustainDAO</h1>
-        <div class="max-w-lsm mt-4 text-[32px]">
+<section class="page-header flex flex-col desktop:flex-row justify-between">
+    <div class="text-white ml-24 mt-36">
+        <h1 class="text-6xl desktop:text-6.5xl tracking-[-0.015em] font-bold leading-14 font-display-bold">
+            SustainDAO</h1>
+        <div class="mt-4 max-w-md desktop:max-w-lsm text-2xl leading-8 desktop:text-[32px] desktop:leading-11">
             <p>
-                Bitcoin miners, maxis, investors, crypto anons and degens, eco-frens, and the unbanked on a mission to
-                make bitcoin the most sustainable asset class.
+                "The world's first DAO to make Bitcoin sustainable. We are uniting miners, maxis, investors, crypto
+                anons and degens, eco-frens, and climate KOLs to make bitcoin the most sustainable reserve asset class
+                in the world!
             </p>
             <p class="mt-8">
-                Oh you say you’re Web3 and not just a bitcoiner? Well we say, a rising tide lifts all boats….
+                We believe that a rising tide lifts all boats - greening BTC will drive the whole industry forward!"
             </p>
         </div>
         <div class="mt-8">
@@ -23,36 +25,42 @@ title: SustainDAO
             </button>
         </div>
     </div>
-    <div class="page-header__animation overflow-hidden w-[65rem] -mt-60">
-        <object class="desktop" data="./assets/svg/new_vector.svg" width="1400" height="1100"></object>
-        <object class="mobile hidden" data="./assets/svg/mobile_visual.svg" width="1400" height="1100">
+    <div class="overflow-hidden w-full mt-16 pl-20 z-0 desktop:z-10 desktop:w-[65rem] desktop:pl-0 desktop:-mt-60">
+        <object class="hidden screen:block" data="./assets/svg/new_vector.svg" width="1400" height="1100"></object>
+        <object class="block screen:hidden mobile" data="./assets/svg/mobile_visual.svg" width="1400" height="1100">
         </object>
     </div>
 </section>
-<section class="relative text-white" id="roadmap">
-    <h1 class="text-5xl font-bold font-display-bold text-center leading-[56px] mb-24">Roadmap</h1>
+<section class="relative text-white pb-20 desktop:pb-0" id="roadmap">
+    <h1 class="text-5xl font-bold font-display-bold text-center leading-12 mb-24">Roadmap</h1>
     <div class="relative">
-        <ol class="ps-timeline p-0 flex justify-center list-none">
+        <ol class="ps-timeline p-0 pt-16 desktop:pt-0 flex flex-col desktop:flex-row justify-center list-none">
             <li class="float-left w-1/3 relative pt-8">
-                <div class="text-center cursor-pointer mx-auto mt-16 hover:scale-110">
-                    <h3 class="font-bold text-center leading-9 text-2xl mb-4">Launch SustainDAO on Juicebox</h3>
-                    <i>May 2022</i>
+                <div
+                    class="text-center cursor-pointer mx-auto mt-16 hover:scale-110 pointer-events-none laptop:pointer-events-auto">
+                    <h3 class="font-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">Launch
+                        SustainDAO on Juicebox</h3>
+                    <i class="leading-7 laptop:leading-9 text-lg laptop:text-2xl">May 2022</i>
                 </div>
                 <span class="absolute text-center top-0 left-1/2"></span>
             </li>
             <li class="float-left w-1/3 relative pt-8">
-                <div class="text-center cursor-pointer mx-auto mt-16 hover:scale-110">
-                    <h3 class="font-bold text-center leading-9 text-2xl mb-4">Deploy dashboard, governance and
+                <div
+                    class="text-center cursor-pointer mx-auto mt-16 hover:scale-110 pointer-events-none laptop:pointer-events-auto">
+                    <h3 class="font-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">Deploy
+                        dashboard, governance and
                         documentation</h3>
-                    <i>June 2022</i>
+                    <i class="leading-7 laptop:leading-9 text-lg laptop:text-2xl">June 2022</i>
                 </div>
                 <span class="absolute text-center top-0 left-1/2"></span>
             </li>
             <li class="float-left w-1/3 relative pt-8">
-                <div class="text-center cursor-pointer mx-auto mt-16 hover:scale-110">
-                    <h3 class="font-bold text-center leading-9 text-2xl mb-4">Participate in the first purchase of sustainable mining certificates
+                <div
+                    class="text-center cursor-pointer mx-auto mt-16 hover:scale-110 pointer-events-none laptop:pointer-events-auto">
+                    <h3 class="font-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">
+                        Participate in the first purchase of sustainable mining certificates
                     </h3>
-                    <i>July 2022</i>
+                    <i class="leading-7 laptop:leading-9 text-lg laptop:text-2xl">July 2022</i>
                 </div>
                 <span class="absolute text-center top-0 left-1/2"></span>
             </li>
@@ -60,7 +68,7 @@ title: SustainDAO
         </ol>
     </div>
 </section>
-<section class="stats">
+<!-- <section class="stats">
     <h3>stats</h3>
 </section>
 <section class="articles">
@@ -71,11 +79,35 @@ title: SustainDAO
 </section>
 <section class="latest-tweets">
     <h3>Latest tweets</h3>
+</section> -->
+<section class="articles">
+    <h3 class="text-center text-white text-5xl font-display-bold">Articles</h3>
+    <div class="flex justify-center px-24 py-16 flex-col">
+        <div class="flex gap-12">
+            {% for post in site.posts limit:2 %}
+            <div class="post-content">
+                <div class="p-16 text-white">
+                    <p class="text-2xl leading-8 mb-8">{{post.date | date: "%B %e, %Y"}}</p>
+                    <a class="text-6xl leading-12" href="{{ post.url }}">{{ post.title }}</a>
+                    <article class="mt-6 text-2xl tracking-wide leading-7">{{ post.excerpt }}</article>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="flex w-full justify-end mt-16">
+            <div class="rounded-3xl text-white font-bold text-2xl leading-6 article-btn cursor-pointer">
+                <div class="py-5 px-10">
+                    View all articles
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="relative z-[1]" id="main">
     <div class="mx-auto text-white max-w-xlg px-8">
         <div class="p-10 bg-black-smoke rounded-3xl">
-            <p class="text-2xl leading-9">On a mission to make bitcoin the most sustainable asset class on earth and thereby
+            <p class="text-2xl leading-9">On a mission to make bitcoin the most sustainable asset class on earth and
+                thereby
                 accelerating global adoption of mankind's most prolific technology.</p>
             <div class="overflow-hidden grid gap-4 mt-8">
                 <div class="rounded-xlg text-white overflow-hidden border-2 border-gray-light">
