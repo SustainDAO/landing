@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 #Revisiting Bitcoin’s Energy ‘Problem’ in the Face of ESG Investment Mandates
 
 ####Critics of Bitcoin’s energy use should consider its relative carbon density rather than the absolute amount of energy used.

@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 #Seven times Bitcoin miners made the world a better place
 ####BTC mining and the miners, themselves, seem to be doing more than just securing the Bitcoin network.
 

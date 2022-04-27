@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 #Bitcoin Miner TeraWulf Sets 2022 Hashrate Guidance
 ###The company, which went public in December and counts among its backers actress Gwyneth Paltrow, also said its 2025 expectations remain on track.
 [**By Aoyon Ashraf&**](https://www.coindesk.com/author/aoyon-ashraf/)

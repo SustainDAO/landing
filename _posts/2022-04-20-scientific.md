@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 #Core Scientific Announces Preliminary 2021 Financial Results, 2022 Operating Guidance and February Updates
 
 - Preliminary 2021 revenue of $515 million to $545 million, net income of $50 million to $60 million and adjusted EBITDA of $225 million to $235 million

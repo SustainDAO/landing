@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 #Can Crypto Miners Make the World Greener?
 ####As it decarbonizes, the mining industry might help push energy producers to build more renewable power sources.
 

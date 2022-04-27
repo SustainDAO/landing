@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 ####Some of the requirements might be challenging for smaller publicly-traded miners to comply with, however.
 [**By Aoyon Ashraf**](https://www.coindesk.com/author/aoyon-ashraf/
 )

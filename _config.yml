@@ -41,7 +41,7 @@ postcss:
   cache: false
 paginate: 6
 paginate_path: "/articles/page:num/"
-
+permalink: /:categories/:year/:month/:day/:title.html
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Read Our Latest Posts'
+categories: article
 ---
 
 # MAJORITY OF FINANCIAL ADVISORS WANT TO INCREASE BITCOIN EXPOSURE: NASDAQ SURVEY

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Rdds'
+categories: article
 ---
 
 #Women in crypto will solve more than just a diversity problem

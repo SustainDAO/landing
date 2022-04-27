@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 'asdasds'
+categories: article
 ---
-
 
 # BlackRock, Fidelity Back Stablecoin Firm Circle in $400 Million Funding Rounds
 - Wall Street prepares for wider adoption of digital currencies

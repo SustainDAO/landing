@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 #Greener Bitcoin Mining Could Be China’s ‘Trillion-Dollar Present’ to the US
 ###Can change come fast enough for an ESG-embattled mining industry?
 

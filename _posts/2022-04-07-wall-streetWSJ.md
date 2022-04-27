@@ -1,3 +1,8 @@
+---
+layout: post
+categories: article
+---
+
 #Wall Street Takes Lead in Crypto Investments
 #####Hedge funds, registered investment advisers and some companies step up their stakes in cryptocurrencies as the market becomes more mainstream
 

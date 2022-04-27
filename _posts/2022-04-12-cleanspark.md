@@ -1,9 +1,7 @@
 ---
 layout: post
-title: 'sdasd'
+categories: article
 ---
-
-
 
 #CleanSpark Aims to Be Among Top Bitcoin Miners With Up to 500MW Expansion
 

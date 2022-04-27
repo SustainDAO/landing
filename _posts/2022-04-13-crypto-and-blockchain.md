@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'sdsdts'
+categories: article
 ---
 
 

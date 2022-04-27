@@ -85,15 +85,18 @@ title: SustainDAO
 
 <section class="articles">
     <h3 class="text-center text-white text-5xl font-display-bold">Articles</h3>
-    <div class="flex justify-center px-24 py-16 flex-col">
-        <div class="flex gap-12">
+    <div class="flex justify-center px-5 tablet:px-10 desktop:px-24 py-16 flex-col">
+        <div class="flex gap-12 flex-col desktop:flex-row">
             {% for post in site.posts limit:2 %}
             <div class="post-content">
-                <div class="p-16 text-white">
-                    <p class="text-2xl leading-8 mb-8">{{post.date | date: "%B %e, %Y"}}</p>
-                    <a class="text-6xl leading-12" href="{{ post.url }}">{{ post.title }}</a>
-                    <article class="mt-6 text-2xl tracking-wide leading-7">{{ post.excerpt }}</article>
-                </div>
+                <a href="{{post.url}}"> 
+                        <div class="p-16 text-white">
+                            <p class="text-2xl leading-8 mb-8">{{post.date | date: "%B %e, %Y"}}</p>
+                            <p class="text-6xl leading-12">{{ post.title }}</p>
+                            <article class="mt-6 text-2xl tracking-wide leading-7 line-clamp-3">{{ post.excerpt | strip_html |
+                                truncate: 160}}</article>
+                        </div>
+                </a>
             </div>
             {% endfor %}
         </div>
