@@ -12,41 +12,33 @@ title: Articles
                 <div class="p-16 text-white">
                     <p class="text-2xl leading-8 mb-8">{{post.date | date: "%B %e, %Y"}}</p>
                     <a class="text-6xl leading-12" href="{{ post.url }}">{{ post.title }}</a>
-                    <article class="mt-6 text-2xl tracking-wide leading-7">{{ post.excerpt }}</article>
+                    <article class="mt-6 text-2xl tracking-wide leading-7">{{ post.excerpt | strip_html | truncate: 160
+                        }}</article>
                 </div>
             </div>
             {%- endfor -%}
         </div>
-        {% if paginator.total_pages > 1 %}
-        <div class="pagination mt-6 text-white text-2xl">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-            {% else %}
-            <span>&laquo; Prev</span>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-            <em>{{ page }}</em>
-            {% elsif page == 1 %}
-            <a href="{{ '/' | relative_url }}">{{ page }}</a>
-            {% else %}
-            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
-            {% endfor %}
-
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-            {% else %}
-            <span>Next &raquo;</span>
-            {% endif %}
-        </div>
-        {% endif %}
-        <div class="flex w-full justify-end mt-16">
-            <div class="rounded-3xl text-white font-bold text-2xl leading-6 article-btn cursor-pointer">
-                <div class="py-5 px-10">
-                    Load more articles
+        <!-- Pagination links -->
+        <div class="pagination flex items-center justify-center text-white mt-6">
+            <div class="page_number flex gap-2 items-center">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative">
+                </a>
+                {% else %}
+                <span class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
+                {% endif %}
+                <div class="flex justify-between items-center gap-4 font-extrabold text-lg">
+                    <div class="page-active w-16 h-16 flex items-center justify-center rounded-full"> {{ paginator.page }} </div>
+                    <span>of</span>
+                    <div class="total-pages rounded-full flex items-center justify-center w-16 h-16">
+                       <p>{{ paginator.total_pages }}</p> 
+                    </div>
                 </div>
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
+                {% else %}
+                <span class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
+                {% endif %}
             </div>
         </div>
     </div>

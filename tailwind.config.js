@@ -1,8 +1,10 @@
 module.exports = {
-  purge: [
+  mode: 'jit',
+  content: [
     './_includes/**/*.html',
     './_layouts/**/*.html',
     './_posts/*.html',
+    './articles/**/*.html',
     './*.html'
   ],
   darkMode: 'class',

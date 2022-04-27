@@ -1,14 +1,46 @@
+@import '../mixins/gradient-border.scss';
 
-  .post-content{
-    border: solid 1px transparent;
-    border-radius: 40px;
-    background-image: linear-gradient(#2B2B2B, #2B2B2B), radial-gradient(circle at top left, #ABE581,#8CE5CC);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+.post-content,
+.article-btn{
+  @include graidentBorder(#2b2b2b);
+}
+.pagination {
+  .page-active {
+    background: linear-gradient(213.12deg, #abe581 26.52%, #8cdbe2 111.08%);
   }
-  .article-btn{
-    border: solid 1px transparent;
-    background-image: linear-gradient(#2B2B2B, #2B2B2B), radial-gradient(circle at top left, #ABE581,#8CE5CC);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+
+  .total-pages {
+    @include graidentBorder(#1f1f1f);
+    p {
+      background-image: linear-gradient(#abe581 26%, #8cdbe2 111.08%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
+  .previous,
+  .next {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border: 2.8px solid;
+      border-bottom: 0;
+      border-left: 0;
+      border-radius: 1px;
+    }
+  }
+  .previous {
+    transform: rotate(225deg);
+  }
+  .next {
+    transform: rotate(45deg);
+  }
+  a.next {
+    &::before {
+      @include graidentBorder(#1f1f1f);
+      border-left: none;
+      border-bottom: none;
+    }
+  }
+}

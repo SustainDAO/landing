@@ -37,6 +37,8 @@ plugins:
 sass:
   sass_dir: _sass
   style: compressed
+postcss:
+  cache: false
 paginate: 6
 paginate_path: "/articles/page:num/"
 
