@@ -16,7 +16,9 @@ module.exports = {
       'secondary': '#8CDAE5',
       'gray': '#F2F2F5',
       'black-smoke': '#2B2B2B',
-      'gray-light': '#464646'
+      'black-main':'#1f1f1f',
+      'gray-light': '#464646',
+      'transparent':'transparent'
     },
     minWidth: {
       '0': '0',
@@ -55,9 +57,13 @@ module.exports = {
       '178': '45rem',
     },
     maxWidth: {
+      'xsm':'13rem',
       'xs': '20rem',
+      'xsl':'22.5rem',
+      'xmd':'25rem',
       'sm': '30rem',
       'lsm': '35rem',
+      'lmd':'37.5rem',
       'md': '40rem',
       'lg': '50rem',
       'xlg': '59rem',
