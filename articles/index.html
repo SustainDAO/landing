@@ -12,8 +12,8 @@ title: Articles
                 <div class="p-16 text-white">
                     <p class="text-2xl leading-8 mb-8">{{post.date | date: "%B %e, %Y"}}</p>
                     <a class="text-6xl leading-12" href="{{ post.url }}">{{ post.title }}</a>
-                    <article class="mt-6 text-2xl tracking-wide leading-7">{{ post.excerpt | strip_html | truncate: 160
-                        }}</article>
+                    <article class="mt-6 text-2xl tracking-wide leading-7 line-clamp-3">{{ post.excerpt | strip_html |
+                        truncate: 160}}</article>
                 </div>
             </div>
             {%- endfor -%}
@@ -22,22 +22,27 @@ title: Articles
         <div class="pagination flex items-center justify-center text-white mt-6">
             <div class="page_number flex gap-2 items-center">
                 {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}" class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative">
+                <a href="{{ paginator.previous_page_path }}"
+                    class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative">
                 </a>
                 {% else %}
-                <span class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
+                <span
+                    class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
                 {% endif %}
-                <div class="flex justify-between items-center gap-4 font-extrabold text-lg">
-                    <div class="page-active w-16 h-16 flex items-center justify-center rounded-full"> {{ paginator.page }} </div>
+                <div class="flex justify-between items-center gap-10 font-extrabold text-lg">
+                    <div class="page-active w-16 h-16 flex items-center justify-center rounded-full"> {{ paginator.page
+                        }} </div>
                     <span>of</span>
                     <div class="total-pages rounded-full flex items-center justify-center w-16 h-16">
-                       <p>{{ paginator.total_pages }}</p> 
+                        <p>{{ paginator.total_pages }}</p>
                     </div>
                 </div>
                 {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}" class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
+                <a href="{{ paginator.next_page_path }}"
+                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
                 {% else %}
-                <span class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
+                <span
+                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
                 {% endif %}
             </div>
         </div>

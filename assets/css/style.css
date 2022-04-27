@@ -611,6 +611,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -788,6 +791,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .duration-300 {
   transition-duration: 300ms;
+}
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 @import 'base/reset.scss';
 @import 'layout/default.scss';

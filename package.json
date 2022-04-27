@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/aram1l7/sustaindao.github.io/issues"
   },
-  "homepage": "https://github.com/aram1l7/sustaindao.github.io#readme"
+  "homepage": "https://github.com/aram1l7/sustaindao.github.io#readme",
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1"
+  }
 }

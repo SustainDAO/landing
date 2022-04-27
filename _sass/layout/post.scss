@@ -1,8 +1,9 @@
-@import '../mixins/gradient-border.scss';
+@import "../mixins/gradient-border.scss";
 
 .post-content,
-.article-btn{
+.article-btn {
   @include graidentBorder(#2b2b2b);
+  border-radius: 40px;
 }
 .pagination {
   .page-active {
@@ -36,8 +37,10 @@
   .next {
     transform: rotate(45deg);
   }
-  a.next {
-    &::before {
+
+  a {
+    &.next::before,
+    &.previous::before {
       @include graidentBorder(#1f1f1f);
       border-left: none;
       border-bottom: none;
