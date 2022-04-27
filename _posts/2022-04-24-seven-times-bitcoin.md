@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
 #Seven times Bitcoin miners made the world a better place
 ####BTC mining and the miners, themselves, seem to be doing more than just securing the Bitcoin network.
 
-!['image'](../../../assets/images/posts/img52.jpeg)
+!['image'](../../../../assets/images/posts/img52.jpeg)
 
 
 What do a swimming pool, beef jerky, a caravan, timber, animal waste, a Guatemalan lake and a high school have in common? 

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
 #Revisiting Bitcoin’s Energy ‘Problem’ in the Face of ESG Investment Mandates
 
 ####Critics of Bitcoin’s energy use should consider its relative carbon density rather than the absolute amount of energy used.
-!['image'](../../../assets/images/posts/img5.jpeg)
+!['image'](../../../../assets/images/posts/img5.jpeg)
 
 I get [really animated](https://twitter.com/CoinDesk/status/1498402102426673158) when discussing Bitcoin’s energy use. And by “Bitcoin’s energy use,” I mean the amount of energy bitcoin mining uses. I tend to say Bitcoin’s energy use isn’t a problem and that we should instead focus on Bitcoin’s emissions. [Note: we capitalize the blockchain (Bitcoin) and use lowercase or trading symbols (bitcoin/BTC) for the asset.]
 
@@ -15,7 +15,7 @@ Before diving into any details, it’s important to make clear what bitcoin (BTC
 ##The comparison game
 In a casual setting, my favorite way to showcase that Bitcoin’s energy use “doesn’t matter” is to append Bitcoin’s energy use to the U.S.’s energy consumption and ask if it looks like Bitcoin is using too much energy (see below).
 
-!['image'](../../../assets/images/posts/img7.png)
+!['image'](../../../../assets/images/posts/img7.png)
 
 Using this graphic, it looks like the U.S. has an energy problem and, given China consumes 79% more energy than the U.S., China has an even bigger energy problem. Bitcoin only uses an estimated [134 TWh of energy](https://ccaf.io/cbeci/index) per year, a scant 1.9% and 3.5% that China and the U.S. consume annually. You can imagine the path the rest of the conversation takes.
 
@@ -29,11 +29,11 @@ The shortest answer is that Satoshi Nakamoto, Bitcoin’s creator, thought the b
 
 A longer answer should add something about the need to ward off attackers if you want to successfully [decentralize trust in a network](https://uncommoncore.co/research-paper-a-model-for-bitcoins-security-and-the-declining-block-subsidy/). Mining is energy-intensive so that it is prohibitively expensive to attack Bitcoin. Remember: Mining doesn’t use energy to validate transactions; energy consumption is the price exacted for securing the entire network.
 
-!['image'](../../../assets/images/posts/img6.png)
+!['image'](../../../../assets/images/posts/img6.png)
 
 The preceding point about transaction validation is important because it is enticing to compare the energy density of Bitcoin transactions to something like Visa (V). Bitcoin can only handle seven transactions per second compared to Visa’s 24,000+. But, remember, Bitcoin doesn’t use energy to validate transactions. The miners’ job is to secure the network, add new blocks of data to the chain and win bitcoin in return. That’s what they spend energy on. They’re not primarily interested in validating transactions. That consensus on the true state of the network is primarily the job of non-mining, Bitcoin full nodes. Plus, Bitcoin transactions are not the same as Visa or other payment processors’ transactions. Bitcoin transactions [provide (probabilistic) finality](https://en.bitcoin.it/wiki/Confirmation), Visa’s don’t. Visa’s success depends on the success of separate systems. Visa’s “token” is not native to its network.
 
-!['image'](../../../assets/images/posts/img8.png)
+!['image'](../../../../assets/images/posts/img8.png)
 
 ##Let’s talk about Bitcoin’s emissions instead
 

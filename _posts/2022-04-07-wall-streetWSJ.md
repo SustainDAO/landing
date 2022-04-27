@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
 #Wall Street Takes Lead in Crypto Investments
 #####Hedge funds, registered investment advisers and some companies step up their stakes in cryptocurrencies as the market becomes more mainstream
 
-!['image'](../../../assets/images/posts/img16.jpeg)
+!['image'](../../../../assets/images/posts/img16.jpeg)
 ######Some $1.14 trillion worth of cryptocurrencies were traded by institutional clients on Coinbase in 2021.
 
 Retail traders comprised bitcoin’s market in the early years and traded on exchanges that offered a single bet: buy or sell bitcoin, 24 hours a day, seven days a week. That resulted in a small, erratic market that could be easily moved by modestly sized trades. 

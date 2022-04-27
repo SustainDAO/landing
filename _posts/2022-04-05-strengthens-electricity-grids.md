@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
 #How Bitcoin Mining Strengthens Electricity Grids
 Mike Hobart - [**Bitcoin Magazine**](https://www.nasdaq.com/publishers/bitcoin-magazine)
 
-!['image'](../../../assets/images/posts/img12.png)
+!['image'](../../../../assets/images/posts/img12.png)
 
 Bitcoin enables mining utilities to engage in agreements that are mutually beneficial to miners and the electricity grid.
 

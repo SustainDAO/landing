@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
@@ -8,7 +8,7 @@ categories: article
 
 [**By Aoyon Ashraf**](https://www.coindesk.com/author/aoyon-ashraf/)
 
-!['image'](../../../assets/images/posts/img13.jpeg)
+!['image'](../../../../../assets/images/posts/img13.jpeg)
 
 Genesis Digital Assets, a privately held industrial-scale bitcoin miner, plans to start a new self-hosted bitcoin mining data center in Sweden, which is expected to have up to 100 megawatts of power capacity.
 

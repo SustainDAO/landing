@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
@@ -7,7 +7,7 @@ categories: article
 ###The company, which went public in December and counts among its backers actress Gwyneth Paltrow, also said its 2025 expectations remain on track.
 [**By Aoyon Ashraf&**](https://www.coindesk.com/author/aoyon-ashraf/)
 
-!['image'](../../../assets/images/posts/img9.jpeg)
+!['image'](../../../../assets/images/posts/img9.jpeg)
 
 TeraWulf (WULF), the environmentally minded bitcoin (BTC) miner that [went public in December](https://www.coindesk.com/business/2021/12/14/bitcoin-miner-terawulf-tumbles-in-trading-debut/), sees itself reaching a hashrate range of 4.7 to 5.1 exahash per second (EH/s) by the end of 2022, [according to a statement](https://www.prnewswire.com/news-releases/terawulf-announces-significant-progress-building-out-mining-operations-and-establishing-digital-asset-infrastructure-301505417.html).
 

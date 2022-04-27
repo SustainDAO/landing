@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
@@ -7,7 +7,7 @@ categories: article
 #####CRYPTO & BLOCKCHAIN
 #Block And Blockstream Begin Construction On Bitcoin Mining Facility Using Solar And Storage Technology From Tesla
 [**Nina Bambysheva**](https://www.forbes.com/sites/ninabambysheva/?sh=5823603e5686) *Forbes Staff*
-!['image'](../../../assets/images/posts/img.png)
+!['image'](../../../../assets/images/posts/img.png)
 A construction worker walks past bitcoin mining at Bitfarms in Saint Hyacinthe, Quebec.
 
 Digital payments company Block (formerly Square) and bitcoin infrastructure firm Blockstream have begun construction on a new open-source bitcoin mining facility, which will be powered by Tesla’s solar and energy storage products, announced Blockstream’s CEO Adam Back.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
@@ -8,7 +8,7 @@ categories: article
 #####The deal with Houston-based Lancium will give CleanSpark a mining hashrate of 10.4 EH/s by spring 2023.
 [**By Aoyon Ashraf**](https://www.coindesk.com/author/aoyon-ashraf/)
 
-!['image'](../../../assets/images/posts/img1.jpeg)
+!['image'](../../../../assets/images/posts/img1.jpeg)
 
 Bitcoin miner CleanSpark (CLSK) announced a deal with energy technology company Lancium to secure an initial 200 megawatts (MW) at Lancium’s renewable-powered West Texas datacenters, with an option for an additional 300MW in the future.
 

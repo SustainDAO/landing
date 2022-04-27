@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
 #How Clean Energy Can Further the Mass Adoption of Crypto
 ###Soluna computing helps make renewable, affordable energy the world’s primary power source by building green crypto mining facilities and data centers where energy would otherwise be left to waste
 
-!['image'](../../../assets/images/posts/img10.webp)
+!['image'](../../../../assets/images/posts/img10.webp)
 
 - **The Bitcoin Mining Council is a “community of 36 mining companies, representing about half of the network…the whole focus of that council is to track energy consumption, its sources, and how much of it is green.”**
   

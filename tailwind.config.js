@@ -90,6 +90,7 @@ module.exports = {
       'desktop': '1270px',
       'screen':'1420px',
       'screen-lg': '1536px',
+      'screen-xl':'1780px'
     },
     fontSize: {
       'xs': '.75rem', // 12px

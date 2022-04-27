@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 categories: article
 ---
 
@@ -8,7 +8,7 @@ categories: article
 )
 
 
-!['image'](../../../assets/images/posts/img3.jpeg)
+!['image'](../../../../assets/images/posts/img3.jpeg)
 *Marathon Digital CEO Fred Thiel at the Bitcoin 2021 conference in Miami, Florida*
 
 [This week’s proposal](https://www.sec.gov/news/press-release/2022-46) by the U.S. Securities and Exchange Commission (SEC) for publicly traded companies to report information on greenhouse-gas emissions and risks related to climate change seem like they could be major challenges for energy-intensive crypto mining firms. However, several in the industry say they’re not that concerned about the potential new rules and even welcome them.
@@ -17,7 +17,7 @@ The SEC’s proposal would require publicly traded companies to report greenhous
 
 ***Read more**: [Crypto Mining, the Energy Crisis and the End of ESG*](https://www.coindesk.com/layer2/miningweek/2022/03/21/crypto-mining-the-energy-crisis-and-the-end-of-esg/)*
 
-[!['image'](../../../assets/images/posts/img4.jpeg)](https://pub.ey.com/public/2021/2112/2112-3933703/blockchain-summit-2022/index.html)
+[!['image'](../../../../assets/images/posts/img4.jpeg)](https://pub.ey.com/public/2021/2112/2112-3933703/blockchain-summit-2022/index.html)
 
 “We welcome it,” said Fred Thiel, CEO of Marathon Digital (MARA), one of the largest publicly traded bitcoin mining companies, which aims to make its operations [100% carbon neutral](https://ir.marathondh.com/news-events/press-releases/detail/1278/marathon-digital-holdings-announces-bitcoin-production-and) by the end of 2022. “We don’t think as a miner, complying with the reporting requirements is going to be necessarily onerous,” he said, adding that the report would add transparency for Marathon’s “shareholders and to the community that we serve.”
 
