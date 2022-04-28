@@ -542,6 +542,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mt-20 {
+  margin-top: 5rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mt-36 {
   margin-top: 9rem;
 }
@@ -572,11 +578,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-16 {
   height: 4rem;
 }
-.max-h-0 {
-  max-height: 0px;
-}
 .max-h-64 {
   max-height: 34rem;
+}
+.max-h-0 {
+  max-height: 0px;
 }
 .w-full {
   width: 100%;
@@ -605,14 +611,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-xsm {
   max-width: 13rem;
 }
-.max-w-lg {
-  max-width: 50rem;
-}
 .max-w-xlg {
   max-width: 59rem;
 }
 .max-w-2xl {
   max-width: 70rem;
+}
+.max-w-4xl {
+  max-width: 90rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -779,9 +785,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-display-bold {
   font-family: "Helvetica Now Display Bold", sans-serif;
 }
-.font-display {
-  font-family: "Helvetica Now Display", sans-serif;
-}
 .text-5xl {
   font-size: 3rem;
 }
@@ -809,11 +812,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4\.5xl {
   font-size: 2.5rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-}
 .font-bold {
   font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .font-normal {
   font-weight: 400;
@@ -823,9 +826,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-extrabold {
   font-weight: 800;
-}
-.font-semibold {
-  font-weight: 600;
 }
 .leading-14 {
   line-height: 4.5rem;
@@ -890,12 +890,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-}
-.line-clamp-4 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
 }
 .line-clamp-5 {
   overflow: hidden;
@@ -989,10 +983,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .tablet\:justify-start {
     justify-content: flex-start;
-  }
-
-  .tablet\:justify-center {
-    justify-content: center;
   }
 
   .tablet\:gap-0 {
@@ -1107,10 +1097,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .laptop\:justify-center {
-    justify-content: center;
-  }
-
   .laptop\:text-2xl {
     font-size: 1.5rem;
   }
@@ -1141,10 +1127,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 33.333333%;
   }
 
-  .desktop\:max-w-sm {
-    max-width: 30rem;
-  }
-
   .desktop\:max-w-md {
     max-width: 40rem;
   }
@@ -1153,12 +1135,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row;
   }
 
-  .desktop\:gap-20 {
-    gap: 5rem;
+  .desktop\:justify-center {
+    justify-content: center;
   }
 
-  .desktop\:p-16 {
-    padding: 4rem;
+  .desktop\:gap-20 {
+    gap: 5rem;
   }
 
   .desktop\:p-10 {
@@ -1196,10 +1178,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 4.5rem;
   }
 
-  .desktop\:text-\[32px\] {
-    font-size: 32px;
-  }
-
   .desktop\:text-2xl {
     font-size: 1.5rem;
   }
@@ -1208,28 +1186,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 2.5rem;
   }
 
-  .desktop\:text-6xl {
-    font-size: 4rem;
-  }
-
-  .desktop\:text-xl {
-    font-size: 1.25rem;
-  }
-
-  .desktop\:leading-11 {
-    line-height: 3rem;
+  .desktop\:leading-9 {
+    line-height: 2.25rem;
   }
 
   .desktop\:leading-6 {
     line-height: 1.5rem;
-  }
-
-  .desktop\:leading-10 {
-    line-height: 2.5rem;
-  }
-
-  .desktop\:leading-9 {
-    line-height: 2.25rem;
   }
 }
 @media (min-width: 1420px) {

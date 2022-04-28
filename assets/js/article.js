@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const children = Array.from(article.children);
   children.forEach(el => {
     if(el.querySelectorAll('img').length > 0){
-     return
+     return el.classList.add('max-w-4xl')
     }
     el.classList.add('max-w-2xl')
   })

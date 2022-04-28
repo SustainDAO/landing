@@ -8,7 +8,7 @@ title: Articles
     <div class="flex justify-center px-5 tablet:px-10 desktop:px-24 py-16 flex-col">
         <div class="grid grid-cols-1 laptop:grid-cols-2 screen-xl:grid-cols-3 gap-12 articles-grid">
             {%- for post in paginator.posts -%}
-            <div class="post-content max-h-64 flex items-center justify-start laptop:justify-center">
+            <div class="post-content max-h-64 flex justify-start">
                 <a href="{{post.url}}">
                     <div class="p-6 desktop:p-10 text-white">
                         <p
