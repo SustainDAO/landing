@@ -1,27 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => { 
+document.addEventListener("DOMContentLoaded", () => {
   const getMobileOS = () => {
-    const ua = navigator.userAgent
+    const ua = navigator.userAgent;
     if (/android/i.test(ua)) {
-      return "Android"
+      return "Android";
     }
-    if(/iPhone/.test(ua)){
-      return "Iphone"
+    if (/iPhone/.test(ua)) {
+      return "Iphone";
+    } else if (
+      /iPad|iPod/.test(ua) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
+    ) {
+      return "iOS";
     }
-    else if (/iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)){
-      return "iOS"
-    }
-    return "Other"
-  }
-
+    return "Other";
+  };
 
   let button = document.querySelector("#learn-more");
-  let os = getMobileOS()
-  if(button){
+  let os = getMobileOS();
+  if (button) {
     button.onclick = () => {
-      doScrolling("#main", os === 'Iphone' ? 300 : os === "iOS" ? 1000 : 50);
+      doScrolling("#main", os === "Iphone" ? 300 : os === "iOS" ? 1000 : 50);
     };
   }
- 
 
   function getElementY(query) {
     return (
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector(query).getBoundingClientRect().top
     );
   }
-  
+
   function doScrolling(element, duration) {
     var startingY = window.pageYOffset;
     var elementY = getElementY(element);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
     };
     var start;
-  
+
     if (!diff) return;
     window.requestAnimationFrame(function step(timestamp) {
       if (!start) start = timestamp;
@@ -57,26 +57,79 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   let question = document.querySelectorAll(".question");
 
-  question.forEach(question => {
-    question.addEventListener("click", event => {
+  question.forEach((question) => {
+    question.addEventListener("click", (event) => {
       const active = document.querySelector(".question.active");
-      if(active && active !== question ) {
+      if (active && active !== question) {
         active.classList.toggle("active");
         active.nextElementSibling.style.maxHeight = 0;
       }
       question.classList.toggle("active");
       const answer = question.nextElementSibling;
-      if(question.classList.contains("active")){
+      if (question.classList.contains("active")) {
         answer.style.maxHeight = answer.scrollHeight + "px";
       } else {
         answer.style.maxHeight = 0;
       }
-    })
-  })
-  let articleBtn =  document.querySelector('.article-btn')
-  if(articleBtn){
+    });
+  });
+  let articleBtn = document.querySelector(".article-btn");
+  if (articleBtn) {
     articleBtn.onclick = () => {
-       window.location.href = '/articles';
-     }
+      window.location.href = "/articles";
+    };
   }
-})
+
+  function countUp() {
+    const animationDuration = 3000;
+
+    const frameDuration = 1000 / 60;
+
+    const totalFrames = Math.round(animationDuration / frameDuration);
+
+    const easeOutQuad = (t) => t * (2 - t);
+
+      const animateCountUp = (el) => {
+      let frame = 0;
+      const countTo = el.dataset.count;
+
+      const counter = setInterval(() => {
+        frame++;
+
+        const progress = easeOutQuad(frame / totalFrames);
+
+        const currentCount = addCommas(Math.round(countTo * progress));
+
+        if (parseInt(el.innerHTML, 10) !== currentCount) {
+          el.innerHTML = currentCount;
+        }
+
+        if (frame === totalFrames) {
+          clearInterval(counter);
+        }
+      }, frameDuration);
+    };
+
+    const countupEls = document.querySelectorAll(".timer");
+    countupEls.forEach(animateCountUp);
+
+    countUp = function(){};
+  }
+  function addCommas(nStr){
+    return nStr.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+  }
+
+  function checkVisible(elm) {
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight
+    );
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  }
+  window.onscroll = () => {
+    if (checkVisible(document.querySelector(".coin-stats"))) {
+      countUp();
+    }
+  };
+});
