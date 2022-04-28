@@ -1,0 +1,56 @@
+---
+layout: default
+title: Articles
+---
+
+<section class="articles mt-36">
+    <h3 class="text-center text-white text-4xl tablet:text-5xl font-display-bold">Articles</h3>
+    <div class="flex justify-center px-5 tablet:px-10 desktop:px-24 py-16 flex-col">
+        <div class="grid grid-cols-1 laptop:grid-cols-2 screen-xl:grid-cols-3 gap-12 articles-grid">
+            {%- for post in paginator.posts -%}
+            <div class="post-content max-h-64 flex justify-start">
+                <a href="{{post.url}}">
+                    <div class="p-6 desktop:p-10 text-white">
+                        <p
+                            class="text-sm font-semibold leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">
+                            {{post.date | date: "%B %e, %Y"}}</p>
+                        <h1 class="text-2xl font-bold font-display-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
+                            {{ post.title | strip_html |
+                            truncate: 20 }}</h1>
+                        <article
+                            class="mt-6 text-sm leading-5 tablet:text-base desktop:text-2xl tracking-wide tablet:leading-7 line-clamp-5">
+                            {{ post.excerpt | strip_html | truncate: 240}}</article>
+                    </div>
+                </a>
+            </div>
+            {%- endfor -%}
+        </div>
+        <div class="pagination flex items-center justify-center text-white mt-10 tablet:mt-20">
+            <div class="page_number flex gap-2 items-center">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}"
+                    class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative">
+                </a>
+                {% else %}
+                <span
+                    class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
+                {% endif %}
+                <div class="flex justify-between items-center gap-10 font-extrabold text-lg">
+                    <div class="page-active w-16 h-16 flex items-center justify-center rounded-full"> {{ paginator.page
+                        }} </div>
+                    <span>of</span>
+                    <div class="total-pages rounded-full flex items-center justify-center w-16 h-16">
+                        <p>{{ paginator.total_pages }}</p>
+                    </div>
+                </div>
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}"
+                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
+                {% else %}
+                <span
+                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

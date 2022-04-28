@@ -1,2 +1,0 @@
-# landing
-SustainDAO landing page

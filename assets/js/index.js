@@ -1,11 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => { 
-  let button = document.querySelector("#learn-more");
-  button.onclick = () => {
-    let os = getMobileOS()
-    doScrolling("#main", os === 'Iphone' ? 300 : os === "iOS" ? 1000 : 50);
-  };
-
-
   const getMobileOS = () => {
     const ua = navigator.userAgent
     if (/android/i.test(ua)) {
@@ -19,7 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return "Other"
   }
-  
+
+
+  let button = document.querySelector("#learn-more");
+  let os = getMobileOS()
+  if(button){
+    button.onclick = () => {
+      doScrolling("#main", os === 'Iphone' ? 300 : os === "iOS" ? 1000 : 50);
+    };
+  }
+ 
+
   function getElementY(query) {
     return (
       window.pageYOffset +
@@ -70,4 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
+  let articleBtn =  document.querySelector('.article-btn')
+  if(articleBtn){
+    articleBtn.onclick = () => {
+       window.location.href = '/articles';
+     }
+  }
 })
