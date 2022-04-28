@@ -3,8 +3,8 @@ layout: article
 categories: article
 ---
 
-#Genesis Digital Assets Plans 100% Clean Energy Mining Center in Sweden
-###The new facility will be powered by a mix of hydro, nuclear and wind energy sources.
+# Genesis Digital Assets Plans 100% Clean Energy Mining Center in Sweden
+### The new facility will be powered by a mix of hydro, nuclear and wind energy sources.
 
 [**By Aoyon Ashraf**](https://www.coindesk.com/author/aoyon-ashraf/)
 

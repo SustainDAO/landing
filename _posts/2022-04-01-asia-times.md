@@ -4,8 +4,8 @@ categories: article
 ---
 
 
-#Bitcoin could be the most ESG-friendly part of your portfolio
-####Cryptocurrencies align with the environmental, social, and governance investing growth trend
+# Bitcoin could be the most ESG-friendly part of your portfolio
+#### Cryptocurrencies align with the environmental, social, and governance investing growth trend
 
 [**By NIGEL GREEN**](https://asiatimes.com/author/nigel-green/)
 

@@ -4,8 +4,8 @@ categories: article
 ---
 
 
-#President Biden’s Crypto Order Is a Huge Step Forward for the Industry
-###The long-awaited order is an acknowledgement of crypto’s importance and the necessity of ensuring regulation is done correctly.
+# President Biden’s Crypto Order Is a Huge Step Forward for the Industry
+### The long-awaited order is an acknowledgement of crypto’s importance and the necessity of ensuring regulation is done correctly.
 **By [Kristin Smith](https://www.coindesk.com/author/KristinSmith/)**
 
 President Joe Biden’s executive order on digital asset innovation – directing federal agencies to study the industry and report on regulatory authority – is a major milestone for the industry in the United States.

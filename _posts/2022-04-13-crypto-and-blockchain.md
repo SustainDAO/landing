@@ -4,8 +4,8 @@ categories: article
 ---
 
 
-#####CRYPTO & BLOCKCHAIN
-#Block And Blockstream Begin Construction On Bitcoin Mining Facility Using Solar And Storage Technology From Tesla
+##### CRYPTO & BLOCKCHAIN
+# Block And Blockstream Begin Construction On Bitcoin Mining Facility Using Solar And Storage Technology From Tesla
 [**Nina Bambysheva**](https://www.forbes.com/sites/ninabambysheva/?sh=5823603e5686) *Forbes Staff*
 !['image'](../../../../assets/images/posts/img.png)
 A construction worker walks past bitcoin mining at Bitfarms in Saint Hyacinthe, Quebec.

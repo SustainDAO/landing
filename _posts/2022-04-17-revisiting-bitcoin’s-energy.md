@@ -3,9 +3,9 @@ layout: article
 categories: article
 ---
 
-#Revisiting Bitcoin’s Energy ‘Problem’ in the Face of ESG Investment Mandates
+# Revisiting Bitcoin’s Energy ‘Problem’ in the Face of ESG Investment Mandates
 
-####Critics of Bitcoin’s energy use should consider its relative carbon density rather than the absolute amount of energy used.
+#### Critics of Bitcoin’s energy use should consider its relative carbon density rather than the absolute amount of energy used.
 !['image'](../../../../assets/images/posts/img5.jpeg)
 
 I get [really animated](https://twitter.com/CoinDesk/status/1498402102426673158) when discussing Bitcoin’s energy use. And by “Bitcoin’s energy use,” I mean the amount of energy bitcoin mining uses. I tend to say Bitcoin’s energy use isn’t a problem and that we should instead focus on Bitcoin’s emissions. [Note: we capitalize the blockchain (Bitcoin) and use lowercase or trading symbols (bitcoin/BTC) for the asset.]
@@ -75,7 +75,7 @@ A common environmental critique against bitcoin mining was that most miners were
 In the report I wrote last year, I relied on research published by Cambridge University to support the position that bitcoin mining uses a respectable percentage of renewables in its energy mix. The 2020 study suggested that 39% of total energy for Bitcoin mining came from renewable sources in 2019 (compared to 28% in 2018) with 76% of miners using renewable sources as part of their energy mix.
 Since then, the Bitcoin Mining Council (BMC), a forum of Bitcoin miners aimed at promoting energy usage transparency, sharing best practices and educating the broader public on the benefits of Bitcoin and bitcoin mining, has shared data that suggests 58.5% of global bitcoin mining uses renewable energy (66.1% for BMC members). That’s relatively clean. It is worth noting that inclusion in the BMC is entirely optional, so there might be some social-desirability response bias to sort through in their survey data.
 
-##Where do we go from here?
+## Where do we go from here?
 
 There were plenty of other ESG related topics I could have covered in this like how bitcoin mining could incentivize [more renewable energy](https://www.coindesk.com/markets/2021/07/14/bitcoin-is-already-incentivizing-renewable-energy/) generation, improve [electrical grid intermittency](https://www.coindesk.com/business/2022/02/03/texas-crypto-miners-shuttering-operations-as-winter-storm-approaches/), revitalize [local economies](https://www.npr.org/2022/02/24/1081252187/bitcoin-cryptocurrency-china-us), empower [oft-forgotten communities](https://www.coindesk.com/policy/2021/11/10/why-shouldnt-the-navajo-mine-bitcoin/), or act as a “[load balancing economic battery](https://www.seetee.io/static/shareholder_letter-6ae7e85717c28831bf1c0eca1d632722.pdf).” In reality bitcoin mining and its energy use is a complicated, multidisciplinary topic. By way of example, my view is that an investment in Bitcoin could be considered an investment in ESG, given its potential impact on energy generation. This column on its own doesn’t represent a full defense of that thesis because there are so many angles that weren’t considered.
 

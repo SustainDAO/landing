@@ -3,8 +3,8 @@ layout: article
 categories: article
 ---
 
-#How Clean Energy Can Further the Mass Adoption of Crypto
-###Soluna computing helps make renewable, affordable energy the world’s primary power source by building green crypto mining facilities and data centers where energy would otherwise be left to waste
+# How Clean Energy Can Further the Mass Adoption of Crypto
+### Soluna computing helps make renewable, affordable energy the world’s primary power source by building green crypto mining facilities and data centers where energy would otherwise be left to waste
 
 !['image'](../../../../assets/images/posts/img10.webp)
 

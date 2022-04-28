@@ -3,8 +3,8 @@ layout: article
 categories: article
 ---
 
-#Women in crypto will solve more than just a diversity problem
-######Hiring women into leadership positions will do more than just diversify this arm of the finance industry; they’ll impact sustainability and ESG issues for the better. 
+# Women in crypto will solve more than just a diversity problem
+###### Hiring women into leadership positions will do more than just diversify this arm of the finance industry; they’ll impact sustainability and ESG issues for the better. 
 !['image'](../../../../assets/images/posts/img2.jpg)
 
 Wall Street has long been dominated by men. Though the percentage of men and women entering the field is roughly equal, finance is still largely a male-dominated industry with men typically rising to the top faster than women. As digital currencies take root, crypto companies have an opportunity to be far more inclusive—but they better start now.

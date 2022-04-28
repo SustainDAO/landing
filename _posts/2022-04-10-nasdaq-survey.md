@@ -4,7 +4,7 @@ categories: article
 ---
 
 # MAJORITY OF FINANCIAL ADVISORS WANT TO INCREASE BITCOIN EXPOSURE: NASDAQ SURVEY
-##In a survey featuring 500 financial advisors, 72% want to invest more heavily in the ecosystem.
+## In a survey featuring 500 financial advisors, 72% want to invest more heavily in the ecosystem.
 
 
 - A survey of 500 financial advisors saw 72% desiring to invest more into the bitcoin and broader cryptocurrency sector if a bitcoin spot ETF was approved.

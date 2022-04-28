@@ -3,8 +3,8 @@ layout: article
 categories: article
 ---
 
-#Greener Bitcoin Mining Could Be China’s ‘Trillion-Dollar Present’ to the US
-###Can change come fast enough for an ESG-embattled mining industry?
+# Greener Bitcoin Mining Could Be China’s ‘Trillion-Dollar Present’ to the US
+### Can change come fast enough for an ESG-embattled mining industry?
 
 
 When China banned bitcoin (BTC) mining from May of last year, it handed the U.S. a “trillion-dollar present,” as one mining executive told CoinDesk. But perhaps most importantly, crypto miners, particularly listed firms in the U.S., Canada and parts of Europe, are presiding over a shift towards greener and more innovative ways to use energy for mining coins.

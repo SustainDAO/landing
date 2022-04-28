@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
- {% include head.html %}
+{% include head.html %}
+
 <body class="relative">
-{% include header.html %}
-<div class="post-container flex mt-40">
-    <div class="social-sidebar h-screen w-64 flex justify-center">
-        <div class="flex flex-col gap-4">
-            <a href="https://twitter.com/sustaindao" target="_blank" class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
-                <img src="../../../../assets/images/icons/twiter-black.svg"/>
-            </a>
-            <a href="https://facebook.com" target="_blank" class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
-                <img src="../../../../assets/images/icons/facebook-black.svg"/>
-            </a>
-            <a href="https://discord.com/invite/rSnzWhGAS8" target="_blank" class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
-                <img src="../../../../assets/images/icons/discord-black.svg"/>
-            </a>
-            <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center copy-btn cursor-pointer">
-                <img src="../../../../assets/images/icons/u_link.svg"/>
+    {% include header.html %}
+    <div class="post-container flex mt-40">
+        <div class="h-screen w-80 flex justify-center">
+            <div class="flex flex-col gap-4">
+                <a href="https://twitter.com/sustaindao" target="_blank"
+                    class="bg-white rounded-full w-10 h-10 flex items-center justify-center group hover:bg-primary ease-in duration-100">
+                    <img class="group-hover:invert brightness-0"
+                        src="../../../../assets/images/icons/twiter-black.svg" />
+                </a>
+                <a href="https://facebook.com" target="_blank"
+                    class="bg-white rounded-full w-10 h-10 flex items-center justify-center group hover:bg-primary ease-in duration-100">
+                    <img class="group-hover:invert brightness-0"
+                        src="../../../../assets/images/icons/facebook-black.svg" />
+                </a>
+                <a href="https://discord.com/invite/rSnzWhGAS8" target="_blank"
+                    class="bg-white rounded-full w-10 h-10 flex items-center justify-center group hover:bg-primary ease-in duration-100">
+                    <img class="group-hover:invert brightness-0"
+                        src="../../../../assets/images/icons/discord-black.svg" />
+                </a>
+                <div
+                data-before="Copy link"
+                    class="bg-white rounded-full w-10 h-10 flex items-center justify-center group hover:bg-primary ease-in duration-100 relative copy-btn cursor-pointer">
+                    <img class="group-hover:invert brightness-0" src="../../../../assets/images/icons/u_link.svg" />
+                </div>
             </div>
         </div>
+        <div class="text-white flex justify-center flex-col">
+            <p class="text-2xl mb-6 font-medium">{{page.date | date: "%B %e, %Y"}}</p>
+            <h1 class="text-6xl leading-12 font-bold">
+                {{ page.title | strip_html |
+                truncate: 30 }}</h1>
+            <article class="font-bold mt-6 text-4.5xl leading-11 line-clamp-3 max-w-2xl mb-4">{{page.excerpt |
+                strip_html | truncate: 120}}</article>
+            <article>
+                {{ content | remove_first:page.excerpt }}
+            </article>
+        </div>
+        <div class="h-screen w-80"></div>
     </div>
-    <div class="post-data">
-        {{content}}
-    </div>
-</div>
-<script src="../../../../assets/js/article.js"></script>
+    <script src="../../../../assets/js/article.js"></script>
 </body>
+
 </html>

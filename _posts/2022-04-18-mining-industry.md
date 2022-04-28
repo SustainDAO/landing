@@ -3,7 +3,7 @@ layout: article
 categories: article
 ---
 
-####Some of the requirements might be challenging for smaller publicly-traded miners to comply with, however.
+#### Some of the requirements might be challenging for smaller publicly-traded miners to comply with, however.
 [**By Aoyon Ashraf**](https://www.coindesk.com/author/aoyon-ashraf/
 )
 
@@ -31,7 +31,7 @@ These efforts to regulate the mining industry may not have come into effect yet,
 
 ***Read More**: [What Does a Crypto Mining Farm Look Like? Striking Photos From Siberia to Spain](https://www.coindesk.com/layer2/miningweek/2022/03/21/what-does-a-crypto-mining-farm-look-like-striking-photos-from-siberia-to-spain/)*
 
-###An advantage for larger firms
+### An advantage for larger firms
 
 The SEC’s proposal will be open for public comment for at least two months before the agency will begin its work on a final rule. However, if the proposal requires companies to report more detailed emission disclosures, it may be challenging to comply with, said Zach Bradford, CEO of CleanSpark (CLSK), a Nasdaq-listed bitcoin miner that uses renewable energy sources.
 

@@ -4,8 +4,8 @@ categories: article
 ---
 
 
-#Bitcoin Mining and ESG: A Match Made in Heaven
-###As clean energy gradually gets cheaper, mining operations will help subsidize green projects, writes the CEO of mining firm CleanSpark. This op-ed is part of CoinDesk’s Mining Week.
+# Bitcoin Mining and ESG: A Match Made in Heaven
+### As clean energy gradually gets cheaper, mining operations will help subsidize green projects, writes the CEO of mining firm CleanSpark. This op-ed is part of CoinDesk’s Mining Week.
 
 Bitcoin mining hasn’t been able to shake its dirty reputation.
 

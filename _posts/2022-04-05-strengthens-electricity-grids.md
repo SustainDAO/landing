@@ -3,7 +3,7 @@ layout: article
 categories: article
 ---
 
-#How Bitcoin Mining Strengthens Electricity Grids
+# How Bitcoin Mining Strengthens Electricity Grids
 Mike Hobart - [**Bitcoin Magazine**](https://www.nasdaq.com/publishers/bitcoin-magazine)
 
 !['image'](../../../../assets/images/posts/img12.png)
