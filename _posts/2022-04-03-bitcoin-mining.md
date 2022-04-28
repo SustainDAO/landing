@@ -23,7 +23,7 @@ For a start, bitcoin is in vogue, but so is ESG. Big investors are more interest
 
 Not only are miners taking note – many want to be greener regardless to attract the right type of investors.
 
-##Shift to renewable energy
+## Shift to renewable energy
 
 In order for new bitcoins to be minted, energy needs to come from somewhere. Lots of operations use energy from “dirty” sources, like coal, gas and petroleum. The [latest data](https://bitcoinminingcouncil.com/q4-bitcoin-mining-council-survey-confirms-sustainable-power-mix-and-technological-efficiency/) from the Bitcoin Mining Council shows that the majority of the bitcoin mining industry uses a sustainable electricity mix – a trend that has already increased.
 
@@ -39,7 +39,7 @@ But renewables can solve a lot of these problems: Bitcoin mining will allow for 
 
 The bitcoin mining industry is not only on its way to a low-carbon future, but it also already produces less carbon than equally energy-intensive industries – such as aluminum production, which [spews out](https://www.greenbiz.com/article/why-addressing-aluminum-industrys-carbon-footprint-key-climate-action) up to 1.1 billion tons of carbon dioxide emissions per year.
 
-##Strengthening the power gridStrengthening the power grid
+## Strengthening the power gridStrengthening the power grid
 
 Bitcoin’s other ESG selling point is that it gives back, too, with energy solutions – a little known fact is that bitcoin mining can actually strengthen a power grid. Not to mention the job creation and investments in regions with limited opportunities for economic development.
 

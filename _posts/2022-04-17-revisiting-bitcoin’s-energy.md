@@ -12,7 +12,7 @@ I get [really animated](https://twitter.com/CoinDesk/status/1498402102426673158)
 
 Before diving into any details, it’s important to make clear what bitcoin (BTC) mining is and why it needs to use a lot of energy. Mining is the mechanism that sustains the financial infrastructure of the Bitcoin network and it is energy intensive by design to provide ironclad security.
 
-##The comparison game
+## The comparison game
 In a casual setting, my favorite way to showcase that Bitcoin’s energy use “doesn’t matter” is to append Bitcoin’s energy use to the U.S.’s energy consumption and ask if it looks like Bitcoin is using too much energy (see below).
 
 !['image'](../../../../assets/images/posts/img7.png)
@@ -23,7 +23,7 @@ I included this graphic to illustrate that the comparison game is usually a wast
 
 I probably committed a cardinal sin in that report by trying to convince the reader that Bitcoin’s energy use was “worth it” because Bitcoin is a “global, trustless, permissionless payment settlement network and a digital, [aspirational store of value](https://www.fidelitydigitalassets.com/bin-public/060_www_fidelity_com/documents/FDAS/bitinvthessisstoreofvalue.pdf).” Let’s save the morality lecture for another time and instead assume, for sake of argument, that Bitcoin is worth using energy.
 
-##Why does bitcoin mining need to use energy?
+## Why does bitcoin mining need to use energy?
 
 The shortest answer is that Satoshi Nakamoto, Bitcoin’s creator, thought the best way to fairly distribute bitcoins was by creating a system in which miners exchange something valuable – energy – for the right to claim the bitcoins (the shortest shortest answer is actually “[anti-spam](https://twitter.com/davidzmorris/status/1503812775742689288).
 
@@ -35,7 +35,7 @@ The preceding point about transaction validation is important because it is enti
 
 !['image'](../../../../assets/images/posts/img8.png)
 
-##Let’s talk about Bitcoin’s emissions instead
+## Let’s talk about Bitcoin’s emissions instead
 
 A growing number of institutions have recognized the importance of environmental, social and governance (ESG) investing and have implemented internal mandates. Ignoring the “SG” for a moment (although they are immensely [important and relevant to Bitcoin](https://bitcoinmagazine.com/culture/check-your-financial-privilege),) it makes sense from an investment perspective to consider the environmental impact of Bitcoin’s energy use.
 

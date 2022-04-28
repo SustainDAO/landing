@@ -6,10 +6,10 @@ title: SustainDAO
 <section class="page-header flex flex-col desktop:flex-row justify-between">
     <div class="text-white ml-6 tablet:ml-24 mt-32 tablet:mt-36">
         <h1
-            class=" text-5xl tablet:text-6xl desktop:text-6.5xl tracking-[-0.015em] font-bold leading-14 font-display-bold">
+            class="text-5xl tablet:text-6xl desktop:text-6.5xl tracking-[-0.015em] font-bold leading-14 font-display-bold">
             SustainDAO</h1>
         <div
-            class="mt-4 max-w-xs xsm:max-w-xmd tablet:max-w-lmd desktop:max-w-sm text-base leading-6 tablet:text-2xl tablet:leading-8 desktop:text-[32px] desktop:leading-11">
+            class="mt-4 max-w-xs xsm:max-w-xmd tablet:max-w-lmd desktop:max-w-md text-base leading-6 tablet:text-2xl tablet:leading-8 desktop:text-2xl desktop:leading-9">
             <p>
                 "The world's first DAO to make Bitcoin sustainable. We are uniting miners, maxis, investors, crypto
                 anons and degens, eco-frens, and climate KOLs to make bitcoin the most sustainable reserve asset class
@@ -89,23 +89,28 @@ title: SustainDAO
 <section class="articles">
     <h3 class="text-center text-white text-4xl tablet:text-5xl font-display-bold">Articles</h3>
     <div class="flex justify-center px-5 tablet:px-10 desktop:px-24 py-16 flex-col">
-        <div class="flex gap-12 flex-col desktop:flex-row">
-            {% for post in site.posts limit:2 %}
-            <div class="post-content">
+        <div class="flex gap-12 flex-col desktop:flex-row justify-center">
+            {% for post in site.posts limit:3 %}
+            <div class="post-content max-h-64 flex items-center justify-center">
                 <a href="{{post.url}}">
-                    <div class="p-6 tablet:p-10 desktop:p-16 text-white">
-                        <p class="text-sm leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">{{post.date | date: "%B %e, %Y"}}</p>
-                        <h1 class="text-3xl leading-9 tablet:text-4xl desktop:text-6xl tablet:leading-12">
+                    <div class="p-6 desktop:p-10 text-white">
+                        <p
+                            class="text-sm leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">
+                            {{post.date | date: "%B %e, %Y"}}</p>
+                        <h1 class="text-2xl font-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
                             {{ post.title | strip_html |
-                            truncate: 35 }}</h1>
-                        <article class="mt-6 text-sm leading-5 tablet:text-base desktop:text-2xl tracking-wide tablet:leading-7 line-clamp-3">{{ post.excerpt | strip_html | truncate: 160}}</article>
+                            truncate: 20 }}</h1>
+                        <article
+                            class="mt-6 text-sm leading-5 tablet:text-base desktop:text-2xl tracking-wide tablet:leading-7 line-clamp-5">
+                            {{ post.excerpt | strip_html | truncate: 240}}</article>
                     </div>
                 </a>
             </div>
             {% endfor %}
         </div>
         <div class="flex w-full justify-end mt-10">
-            <div class="rounded-3xl text-white font-bold text-base leading-4 tablet:text-xl desktop:text-2xl desktop:leading-6 article-btn cursor-pointer">
+            <div
+                class="rounded-3xl text-white font-bold text-base leading-4 tablet:text-xl desktop:text-2xl desktop:leading-6 article-btn cursor-pointer">
                 <div class="py-3 px-6 tablet:px-8 desktop:px-10 tablet:py-4 desktop:py-5">
                     View all articles
                 </div>
@@ -228,22 +233,5 @@ title: SustainDAO
             </div>
         </div>
     </div>
-    <div class="mx-auto p-5 tablet:p-8 max-w-xlg">
-        <div
-            class="join-us flex-col gap-4 tablet:flex-row tablet:gap-0 bg-black-smoke rounded-xlg flex justify-between items-center text-white p-6">
-            <p class="font-display-bold text-base tablet:text-xl leading-7 tracking-[-0.015em]">Join the community </p>
-            <div class="grid grid-cols-3 gap-8 xsm:flex items-center xsm:gap-4 tablet:gap-6">
-                <a href="https://twitter.com/sustaindao" target="_blank"><img
-                        src="./assets/images/icons/twitter.svg" /></a>
-                <a href="https://discord.com/invite/rSnzWhGAS8" target="_blank"><img
-                        src="./assets/images/icons/discord.svg" /></a>
-                <a href="https://github.com/SustainDAO" target="_blank"><img
-                        src="./assets/images/icons/github.svg" /></a>
-                <a href="https://www.gitbook.com/" target="_blank"><img src="./assets/images/icons/gitbook.svg" /></a>
-                <a href="https://www.discourse.org/" target="_blank"><img
-                        src="./assets/images/icons/discourse.svg" /></a>
-                <a href="https://juicebox.money/#/" target="_blank"><img src="./assets/images/icons/juicebox.svg" /></a>
-            </div>
-        </div>
-    </div>
+
 </section>

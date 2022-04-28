@@ -8,14 +8,18 @@ title: Articles
     <div class="flex justify-center px-5 tablet:px-10 desktop:px-24 py-16 flex-col">
         <div class="grid grid-cols-1 laptop:grid-cols-2 screen-xl:grid-cols-3 gap-12 articles-grid">
             {%- for post in paginator.posts -%}
-            <div class="post-content max-h-64">
+            <div class="post-content max-h-64 flex items-center justify-start laptop:justify-center">
                 <a href="{{post.url}}">
-                    <div class="p-6 tablet:p-10 desktop:p-16 text-white">
-                        <p class="text-sm leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">{{post.date | date: "%B %e, %Y"}}</p>
-                        <h1 class="text-3xl leading-9 tablet:text-4xl desktop:text-6xl tablet:leading-12">
+                    <div class="p-6 desktop:p-10 text-white">
+                        <p
+                            class="text-sm leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">
+                            {{post.date | date: "%B %e, %Y"}}</p>
+                        <h1 class="text-2xl font-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
                             {{ post.title | strip_html |
-                            truncate: 30 }}</h1>
-                        <article class="mt-6 text-sm leading-5 tablet:text-base desktop:text-2xl tracking-wide tablet:leading-7 line-clamp-3">{{ post.excerpt | strip_html | truncate: 160}}</article>
+                            truncate: 20 }}</h1>
+                        <article
+                            class="mt-6 text-sm leading-5 tablet:text-base desktop:text-2xl tracking-wide tablet:leading-7 line-clamp-5">
+                            {{ post.excerpt | strip_html | truncate: 240}}</article>
                     </div>
                 </a>
             </div>

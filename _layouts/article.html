@@ -22,8 +22,7 @@
                     <img class="group-hover:invert brightness-0"
                         src="../../../../assets/images/icons/discord-black.svg" />
                 </a>
-                <div
-                data-before="Copy link"
+                <div data-before="Copy link"
                     class="bg-white rounded-full w-10 h-10 flex items-center justify-center group hover:bg-primary ease-in duration-100 relative copy-btn cursor-pointer">
                     <img class="group-hover:invert brightness-0" src="../../../../assets/images/icons/u_link.svg" />
                 </div>
@@ -36,12 +35,26 @@
                 truncate: 30 }}</h1>
             <article class="font-bold mt-6 text-4.5xl leading-11 line-clamp-3 max-w-2xl mb-4">{{page.excerpt |
                 strip_html | truncate: 120}}</article>
-            <article>
+            <article class="content">
                 {{ content | remove_first:page.excerpt }}
             </article>
+            <div class="post-nav text-white text-2xl">
+                <div>
+                  {% if page.previous.url %}
+                  <a href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
+                  {% endif %}
+                </div>
+                <div class="post-nav-next">
+                  {% if page.next.url %}
+                  <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
+                  {% endif %}
+                </div>
+              </div>
         </div>
+        
         <div class="h-screen w-80"></div>
     </div>
+    {% include footer.html %}
     <script src="../../../../assets/js/article.js"></script>
 </body>
 

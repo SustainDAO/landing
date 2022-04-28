@@ -5,7 +5,7 @@ categories: article
 
 # CleanSpark Aims to Be Among Top Bitcoin Miners With Up to 500MW Expansion
 
-#####The deal with Houston-based Lancium will give CleanSpark a mining hashrate of 10.4 EH/s by spring 2023.
+##### The deal with Houston-based Lancium will give CleanSpark a mining hashrate of 10.4 EH/s by spring 2023.
 [**By Aoyon Ashraf**](https://www.coindesk.com/author/aoyon-ashraf/)
 
 !['image'](../../../../assets/images/posts/img1.jpeg)

@@ -47,7 +47,7 @@ Large companies may not be completely spared either, however, if they are requir
 
 Either way, Bradford said he expects CleanSpark will not be impacted significantly by the proposed new rules. “At CleanSpark, we are always aiming to be ahead of the regulatory environment so we anticipate a minimal impact to our reporting and operational efforts should any of these rules be adopted,” Bradford said.
 
-###Incentives to use cleaner energy
+### Incentives to use cleaner energy
 Moreover, implementation of this new regulation by the miners will likely incentivize more adoption of renewable energy. “If this ends up raising the cost of capital for carbon-heavy miners, in the absence of any subsidies put in place to counter the effect at local or state levels, it will merely incentivize a shift in hash power away from the most carbon intensive parts of the U.S. and into the more renewables dominated regions,” said Chris Bendiksen, bitcoin research lead for digital asset manager CoinShares.
 
 In fact, a fourth-quarter survey by the Bitcoin Mining Council estimated that bitcoin [miners globally are now utilizing](https://bitcoinminingcouncil.com/q4-bitcoin-mining-council-survey-confirms-sustainable-power-mix-and-technological-efficiency/) a 58.5% mix of sustainable energy for their mining operations, up one percentage point from the third quarter.

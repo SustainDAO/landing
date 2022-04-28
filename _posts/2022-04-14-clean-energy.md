@@ -19,7 +19,7 @@ But what if these problems could be tackled in tandem? Could associating a surge
 
 The team at Soluna believes that not only is the answer a resounding yes, but that this could be the ideal strategy for mass adoption of crypto.
 
-##The Efficiency of Mining
+## The Efficiency of Mining
 
 We spoke with John Belizaire, CEO of Soluna, to get his thoughts on the subject.
 
@@ -31,7 +31,7 @@ He also mentioned that the Bitcoin network uses a sort of autonomous feedback lo
 
 Rather than seeing this as a negative, transitioning to clean energy makes the increasing need for energy a positive attribute of the Bitcoin network.
 
-##Mining Energy Relative to Other Energy-Intensive Practices
+## Mining Energy Relative to Other Energy-Intensive Practices
 
 Perhaps the most compelling part of the conversation occurred when Belizaire cited a [document](https://bitcoinminingcouncil.com/wp-content/uploads/2021/07/2021.07.01-BMC-Q2-2021-Materials.pdf) put out by the Bitcoin Mining Council.
 
@@ -45,7 +45,7 @@ The slide deck also showed that industries like gold mining, the military-indust
 
 In terms of total energy used, Bitcoin mining only uses about 10% more energy per year than holiday lights. That’s right – Christmas lights use almost as much energy as Bitcoin does to secure nearly a trillion dollars’ worth of value, according to the Bitcoin Mining Council.
 
-##Renewable Energy on the Rise
+## Renewable Energy on the Rise
 
 Overall, the reality of Bitcoin’s energy usage depends on the frame of reference being used.
 
@@ -53,7 +53,7 @@ It may be true that a single transaction requires more energy than an entire hou
 
 The fact of the matter, however, is that a large portion of the network utilizes renewable energy sources, and that number is set to rise once Soluna joins the Bitcoin Mining Council. This could help lead to mass adoption of Bitcoin by fostering a greater understanding of Bitcoin’s potential positive impact on electrical grids.
 
-##Making Things Mainstream
+## Making Things Mainstream
 
 Bitcoin miners are considered to be a “flexible load.” That means their energy usage can be turned on or off at a moment’s notice with ease. Doing so doesn’t disrupt the process of mining at all.
 
