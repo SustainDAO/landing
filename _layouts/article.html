@@ -30,26 +30,14 @@
         </div>
         <div class="text-white flex justify-center flex-col">
             <p class="text-2xl mb-6 font-medium">{{page.date | date: "%B %e, %Y"}}</p>
-            <h1 class="text-6xl leading-12 font-bold">
+            <h1 class="text-6xl leading-12 font-bold font-display-bold">
                 {{ page.title | strip_html |
                 truncate: 30 }}</h1>
-            <article class="font-bold mt-6 text-4.5xl leading-11 line-clamp-3 max-w-2xl mb-4">{{page.excerpt |
+            <article class="font-bold font-display-bold mt-6 text-4.5xl leading-11 line-clamp-3 max-w-2xl mb-4">{{page.excerpt |
                 strip_html | truncate: 120}}</article>
             <article class="content">
                 {{ content | remove_first:page.excerpt }}
             </article>
-            <div class="post-nav text-white text-2xl">
-                <div>
-                  {% if page.previous.url %}
-                  <a href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
-                  {% endif %}
-                </div>
-                <div class="post-nav-next">
-                  {% if page.next.url %}
-                  <a href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
-                  {% endif %}
-                </div>
-              </div>
         </div>
         
         <div class="h-screen w-80"></div>

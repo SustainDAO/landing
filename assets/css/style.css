@@ -779,6 +779,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-display-bold {
   font-family: "Helvetica Now Display Bold", sans-serif;
 }
+.font-display {
+  font-family: "Helvetica Now Display", sans-serif;
+}
 .text-5xl {
   font-size: 3rem;
 }
@@ -820,6 +823,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-extrabold {
   font-weight: 800;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .leading-14 {
   line-height: 4.5rem;

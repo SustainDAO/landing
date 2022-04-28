@@ -6,7 +6,7 @@ categories: article
 # Environmental Groups Pressure Bitcoin Community to Lower Energy Use
 #### Consortium launches effort advocating changes to the cryptocurrency’s code
 
-!['image']((../../../../assets/images/posts/img14.jpeg)
+!['image'](../../../../assets/images/posts/img14.jpeg)
 
 
 A consortium of environmental groups launched a campaign on Monday seeking to change b

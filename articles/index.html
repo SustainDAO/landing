@@ -12,9 +12,9 @@ title: Articles
                 <a href="{{post.url}}">
                     <div class="p-6 desktop:p-10 text-white">
                         <p
-                            class="text-sm leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">
+                            class="text-sm font-semibold leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">
                             {{post.date | date: "%B %e, %Y"}}</p>
-                        <h1 class="text-2xl font-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
+                        <h1 class="text-2xl font-bold font-display-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
                             {{ post.title | strip_html |
                             truncate: 20 }}</h1>
                         <article
