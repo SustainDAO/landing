@@ -33,6 +33,35 @@ title: SustainDAO
         </object>
     </div>
 </section>
+<section class="coin-stats px-24 text-white">
+    <div class="w-full flex items-center gap-48">
+        <div class="content">
+            <div class="py-14 px-20">
+                <h3 class="text-5xl leading-12">Coin Stats</h3>
+                <div class="flex justify-between mt-12 gap-80">
+                    <div class="flex flex-col min-w-98">
+                        <h5 class="text-4xl leading-[53px]">Treasury Balance</h5>
+                        <div class="flex items-center gap-2 text-6xl font-display-bold">
+                            <span>$</span>
+                            <h2 data-count="15255214" class="timer font-display-bold">15,255,214</h2>
+                        </div>
+                    </div>
+                    <div class="flex flex-col min-w-84">
+                        <h5 class="text-4xl leading-[53px]">Number of holders </h5>
+                        <div class="flex items-center gap-2 text-6xl font-display-bold">
+                            <h2 data-count="25000" class="timer font-display-bold">25,000</h2>
+                            <span>+</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btc-animation">
+            <img src="/assets/images/bitcoin.svg" />
+        </div>
+    </div>
+</section>
 <section class="relative text-white pb-20 desktop:pb-0 bg-black-main tablet:bg-transparent" id="roadmap">
     <h1
         class="text-4xl mb-12 pt-12 tablet:mb-24 tablet:pt-0 tablet:text-5xl font-bold font-display-bold text-center leading-12">
@@ -43,7 +72,9 @@ title: SustainDAO
             <li class="float-left w-5/6 desktop:w-1/3  relative pt-8">
                 <div
                     class="text-center max-w-xsm xsm:max-w-xs sm:max-w-xsl cursor-pointer mx-auto mt-16 hover:scale-110 pointer-events-none laptop:pointer-events-auto">
-                    <h3 class="font-bold font-display-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">Launch
+                    <h3
+                        class="font-bold font-display-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">
+                        Launch
                         SustainDAO on Juicebox</h3>
                     <i class="leading-7 laptop:leading-9 text-lg laptop:text-2xl">May 2022</i>
                 </div>
@@ -52,7 +83,9 @@ title: SustainDAO
             <li class="float-left w-5/6 desktop:w-1/3 relative pt-8">
                 <div
                     class="text-center max-w-xsm xsm:max-w-xs sm:max-w-xsl cursor-pointer mx-auto mt-16 hover:scale-110 pointer-events-none laptop:pointer-events-auto">
-                    <h3 class="font-bold font-display-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">Deploy
+                    <h3
+                        class="font-bold font-display-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">
+                        Deploy
                         dashboard, governance and
                         documentation</h3>
                     <i class="leading-7 laptop:leading-9 text-lg laptop:text-2xl">June 2022</i>
@@ -62,7 +95,8 @@ title: SustainDAO
             <li class="float-left w-5/6 desktop:w-1/3 relative pt-8">
                 <div
                     class="text-center max-w-xsm xsm:max-w-xs sm:max-w-xsl cursor-pointer mx-auto mt-16 hover:scale-110 pointer-events-none laptop:pointer-events-auto">
-                    <h3 class="font-bold font-display-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">
+                    <h3
+                        class="font-bold font-display-bold text-center leading-7 laptop:leading-9 text-lg laptop:text-2xl mb-4">
                         Participate in the first purchase of sustainable mining certificates
                     </h3>
                     <i class="leading-7 laptop:leading-9 text-lg laptop:text-2xl">July 2022</i>
@@ -73,19 +107,6 @@ title: SustainDAO
         </ol>
     </div>
 </section>
-<!-- <section class="stats">
-    <h3>stats</h3>
-</section>
-<section class="articles">
-    <h3>articles</h3>
-</section>
-<section class="hash">
-    <h3>sustainable hash</h3>
-</section>
-<section class="latest-tweets">
-    <h3>Latest tweets</h3>
-</section> -->
-
 <section class="articles">
     <h3 class="text-center text-white text-4xl tablet:text-5xl font-display-bold">Articles</h3>
     <div class="flex justify-center px-5 tablet:px-10 desktop:px-24 py-16 flex-col">
@@ -97,7 +118,8 @@ title: SustainDAO
                         <p
                             class="text-sm font-semibold leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">
                             {{post.date | date: "%B %e, %Y"}}</p>
-                        <h1 class="text-2xl font-bold font-display-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
+                        <h1
+                            class="text-2xl font-bold font-display-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
                             {{ post.title | strip_html |
                             truncate: 20 }}</h1>
                         <article

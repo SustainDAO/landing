@@ -605,6 +605,33 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-16 {
   width: 4rem;
 }
+.w-2\/5 {
+  width: 40%;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-3\/5 {
+  width: 60%;
+}
+.w-1\/2 {
+  width: 50%;
+}
+.min-w-98 {
+  min-width: 24.5rem;
+}
+.min-w-51 {
+  min-width: 13.75rem;
+}
+.min-w-64 {
+  min-width: 16rem;
+}
+.min-w-full {
+  min-width: 100%;
+}
+.min-w-84 {
+  min-width: 21rem;
+}
 .max-w-xs {
   max-width: 20rem;
 }
@@ -650,6 +677,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between {
   justify-content: space-between;
 }
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
 .gap-12 {
   gap: 3rem;
 }
@@ -664,6 +697,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-10 {
   gap: 2.5rem;
+}
+.gap-28 {
+  gap: 7rem;
+}
+.gap-40 {
+  gap: 10rem;
+}
+.gap-48 {
+  gap: 12rem;
+}
+.gap-64 {
+  gap: 16rem;
+}
+.gap-72 {
+  gap: 18rem;
+}
+.gap-80 {
+  gap: 20rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -758,6 +809,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
 .pl-20 {
   padding-left: 5rem;
 }
@@ -812,6 +895,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4\.5xl {
   font-size: 2.5rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -850,6 +936,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-11 {
   line-height: 3rem;
+}
+.leading-\[\] {
+  line-height: ;
+}
+.leading-\[53px\] {
+  line-height: 53px;
 }
 .tracking-\[-0\.015em\] {
   letter-spacing: -0.015em;
