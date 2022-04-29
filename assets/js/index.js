@@ -121,7 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const callbackFn = (entries) => {
     entries.forEach(entry => {
       if(entry.isIntersecting){
-        countUp(`.${entry.target.classList[0]}`)
         let btc = entry.target.querySelector('.btc-animation')
         if(btc) {
           btc.style.animation = 'slide-left 2s';
@@ -132,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
           union.style.animation = 'slide-right 2s';
           union.style.marginLeft = '0';
         }
+        countUp(`.${entry.target.classList[0]}`)
         observer.unobserve(entry.target)
       }
     })
