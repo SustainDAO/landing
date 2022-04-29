@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  function countUp() {
+  function countUp(el) {
     const animationDuration = 3000;
 
     const frameDuration = 1000 / 60;
@@ -110,26 +110,40 @@ document.addEventListener("DOMContentLoaded", () => {
       }, frameDuration);
     };
 
-    const countupEls = document.querySelectorAll(".timer");
+    const countupEls = document.querySelectorAll(`${el} .timer`);
     countupEls.forEach(animateCountUp);
-
-    countUp = function(){};
   }
   function addCommas(nStr){
     return nStr.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
   }
 
-  function checkVisible(elm) {
-    var rect = elm.getBoundingClientRect();
-    var viewHeight = Math.max(
-      document.documentElement.clientHeight,
-      window.innerHeight
-    );
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  let stats = document.querySelectorAll('.stats-container')
+  const callbackFn = (entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        countUp(`.${entry.target.classList[0]}`)
+        let btc = entry.target.querySelector('.btc-animation')
+        if(btc) {
+          btc.style.animation = 'slide-left 2s';
+          btc.style.marginLeft = '0';
+        }
+        let union = entry.target.querySelector('.union-animation');
+        if(union){
+          union.style.animation = 'slide-right 2s';
+          union.style.marginLeft = '0';
+        }
+        observer.unobserve(entry.target)
+      }
+    })
   }
-  window.onscroll = () => {
-    if (checkVisible(document.querySelector(".coin-stats"))) {
-      countUp();
-    }
-  };
+  let options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+ }
+  const observer = new IntersectionObserver(callbackFn,options)
+  
+  stats.forEach(el => {
+    observer.observe(el)
+  })
 });

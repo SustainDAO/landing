@@ -18,13 +18,15 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   
   document.addEventListener("click", (e) => {
-    let btn = document.querySelector(".copy-btn");
-    if (e.target === btn || e.target.parentNode === btn) {
-      copyUrl();
-      btn.setAttribute("data-before", "Copied!");
-    } else {
-      btn.setAttribute("data-before", "Copy link");
-    }
+    let btn = document.querySelectorAll(".copy-btn");
+    btn.forEach(el => {
+      if(e.target === el || e.target.parentNode === el){
+        copyUrl();
+        el.setAttribute("data-before", "Copied!");
+      } else {
+      el.setAttribute("data-before", "Copy link");
+      }
+    })
   });
   let article = document.querySelector('article.content');
   const children = Array.from(article.children);
