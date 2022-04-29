@@ -85,6 +85,7 @@ module.exports = {
     },
     screens: {
       'xsm': '480px',
+      'xmd':'550px',
       'sm': '640px',
       'tablet': '720px',
       'md':'840px',

@@ -34,16 +34,26 @@
 }
 
 @keyframes slide-right {
-  from {
-    margin-left: -100%;
+  0% {
+    margin-left: -60%;
   }
-  to {
-    margin-left: 0%;
+  50% {
+    margin-left:-40%;
+  }
+  100%{
+    margin-left: 0;
   }
 }
 
 #learn-more {
-  background: linear-gradient(213.12deg, #abe581 26.52%, #8cdbe2 111.08%);
+  background-image: linear-gradient(to right, #abe581, #8cdbe2, #c0f898, #85f5ff);
+  background-size: 300% 100%;
+  transition: all 0.7s ease-in-out; 
+  &:hover {
+    background-position: 100% 0;
+    transform: scale(1.05);
+    transition: all 0.7s ease-in-out;
+  }
 }
 
 .join-us {
@@ -146,9 +156,9 @@
 }
 
 .coin-stats {
-  .wrapper{
+  .wrapper {
     align-items: self-start;
-    @media screen and (min-width:1780px){
+    @media screen and (min-width: 1780px) {
       align-items: center;
     }
   }
@@ -165,9 +175,9 @@
 }
 
 .community-stats {
-  .wrapper{
+  .wrapper {
     align-items: self-end;
-    @media screen and (min-width:1780px){
+    @media screen and (min-width: 1780px) {
       align-items: center;
     }
   }

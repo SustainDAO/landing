@@ -36,4 +36,18 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     el.classList.add('max-w-2xl')
   })
+  let postUrl = encodeURI(document.location.href);
+  let postTitle = encodeURI("Hi everyone, please check this out: ");
+  const facebookBtn = document.querySelectorAll(".facebook-btn");
+  const twitterBtn = document.querySelectorAll(".twitter-btn");
+  facebookBtn.forEach(el => {
+    el.onclick = () => {
+      window.location.href = `https://www.facebook.com/sharer.php?u=${postUrl}`
+    }
+  })
+  twitterBtn.forEach(el => {
+    el.onclick = () => {
+      window.location.href = `https://twitter.com/share?url=${postUrl}&text=${postTitle}`
+    }
+  })
 });

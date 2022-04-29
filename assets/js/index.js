@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         let union = entry.target.querySelector('.union-animation');
         if(union){
-          union.style.animation = 'slide-right 2s';
+          union.style.animation = 'slide-right 2.5s';
           union.style.marginLeft = '0';
         }
         countUp(`.${entry.target.classList[0]}`)
