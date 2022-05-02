@@ -1599,6 +1599,16 @@
     lodash "^4.17.15"
     lodash-es "^4.17.15"
 
+"@rive-app/canvas@1.0.47":
+  version "1.0.47"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-1.0.47.tgz#f0fe39a5f35ac6e3d470720726e8173e584b5805"
+  integrity sha512-HfJcpcJzDtY6aCWnFgoODKBg5fqRk4dVQv1stfv6gAi2nIvd0hFBkkI7tSRqx4LWkTbs8sPyU4TSFTGp6HGt5g==
+
+"@rive-app/webgl@1.0.44":
+  version "1.0.44"
+  resolved "https://registry.yarnpkg.com/@rive-app/webgl/-/webgl-1.0.44.tgz#9f3f5f64128b806ce98e4254fca957280fd5d1b0"
+  integrity sha512-RCeZVPjrGw6YLNg9IjFSQyqSCkRyN+/9nMxGjk4IacgL3hWIvMEJDm99bXTSy4Jc0RXUtyupxSE32+ficrzisw==
+
 "@sindresorhus/is@^2.0.0":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-2.1.1.tgz#ceff6a28a5b4867c2dd4a1ba513de278ccbe8bb1"
@@ -12108,6 +12118,14 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+rive-react@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/rive-react/-/rive-react-3.0.1.tgz#b9803bc02b4ff200290aadf83fd8bbf527a44a7c"
+  integrity sha512-MeARmmXCGKXqu5AX9+sQ4cKY8o6kwvGpBfigvAoeTMef6FNt6vcqzFsVznP6JXJmXP/1Oc1yHFQy5BbQ7egv5A==
+  dependencies:
+    "@rive-app/canvas" "1.0.47"
+    "@rive-app/webgl" "1.0.44"
 
 rsvp@^4.8.4:
   version "4.8.5"
