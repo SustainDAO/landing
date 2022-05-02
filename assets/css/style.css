@@ -424,6 +424,69 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 480px) {
+
+  .container {
+    max-width: 480px;
+  }
+}
+@media (min-width: 550px) {
+
+  .container {
+    max-width: 550px;
+  }
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 720px) {
+
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 840px) {
+
+  .container {
+    max-width: 840px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1270px) {
+
+  .container {
+    max-width: 1270px;
+  }
+}
+@media (min-width: 1420px) {
+
+  .container {
+    max-width: 1420px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+@media (min-width: 1780px) {
+
+  .container {
+    max-width: 1780px;
+  }
+}
 .pointer-events-none {
   pointer-events: none;
 }
