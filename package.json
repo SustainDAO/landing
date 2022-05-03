@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "dev": "bundle exec jekyll clean && run-p dev:{webpack,jekyll,css}",
-    "dev:jekyll": "sleep 5 && bundle exec jekyll serve --watch --livereload --host=0.0.0.0",
+    "dev:jekyll": "sleep 5 && bundle exec jekyll serve --port 3000 --host=0.0.0.0",
     "dev:webpack": "webpack --mode development --watch",
     "build": "run-s build:webpack build:jekyll",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
