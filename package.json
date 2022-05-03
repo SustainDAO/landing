@@ -48,6 +48,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
     "tailwindcss": "^3.0.24",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.0.0",
     "webpack-cli": "^4.0.0"
   },

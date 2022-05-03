@@ -1,18 +1,23 @@
 const webpack = require('webpack');
 const path = require('path');
-// import path from 'path';
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  // webpack folder's entry js - excluded from jekll's build process.
   mode: 'development',
   entry: path.resolve(__dirname, 'src', 'entry.jsx'),
   output: {
-    // we're going to put the generated file in the assets folder so jekyll will grab it.
     path: path.resolve(__dirname, 'assets/js'),
     filename: "bundle.js"
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
+  },
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        test: /\.(js|mjs|jsx|ts|tsx)$/,
+      }),
+    ],
   },
   module: {
     rules: [
