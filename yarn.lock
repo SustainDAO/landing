@@ -1604,6 +1604,18 @@
   resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-1.0.47.tgz#f0fe39a5f35ac6e3d470720726e8173e584b5805"
   integrity sha512-HfJcpcJzDtY6aCWnFgoODKBg5fqRk4dVQv1stfv6gAi2nIvd0hFBkkI7tSRqx4LWkTbs8sPyU4TSFTGp6HGt5g==
 
+"@rive-app/canvas@^1.0.49":
+  version "1.0.49"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-1.0.49.tgz#ceda806eea36fb7fce3d913eb7b9c78c4ecc1610"
+  integrity sha512-EZTIq/IxxWKGYEOe31Rn0xTL4Kz4/QE1BZ6r+p0wffrongBGQOBRfoYqCsf+7QGoGvHd4sDIcDr9AaTrWtIItw==
+
+"@rive-app/react-canvas@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@rive-app/react-canvas/-/react-canvas-3.0.1.tgz#6728beaa52bd9fa26290b48e2295e6a217712ea2"
+  integrity sha512-ZcRWjhaVrHUm7IyGKW2Cp0ztiOt9aBhtHrL0gGtAJ8pPFFTqJh4dyMNGXVf3g1KgW04qWr6bX4IJfj7rLGqCcg==
+  dependencies:
+    "@rive-app/canvas" "1.0.47"
+
 "@rive-app/webgl@1.0.44":
   version "1.0.44"
   resolved "https://registry.yarnpkg.com/@rive-app/webgl/-/webgl-1.0.44.tgz#9f3f5f64128b806ce98e4254fca957280fd5d1b0"
