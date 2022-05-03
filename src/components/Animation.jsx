@@ -18,7 +18,7 @@ const Animation = () => {
         src="../../assets/animations/animation.riv"
         layout={
           new Layout({
-            fit: screenWidth < 1000 ? Fit.Cover : Fit.Fill,
+            fit: Fit.Cover,
             alignment: Alignment.Center,
           })
         }
