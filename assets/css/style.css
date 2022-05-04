@@ -566,6 +566,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-36 {
   margin-top: 9rem;
 }
+.ml-24 {
+  margin-left: 6rem;
+}
 .block {
   display: block;
 }
@@ -685,6 +688,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .gap-10 {
   gap: 2.5rem;
@@ -970,8 +976,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (min-width: 550px) {
 
+  .xmd\:h-16 {
+    height: 4rem;
+  }
+
+  .xmd\:w-16 {
+    width: 4rem;
+  }
+
   .xmd\:flex-row {
     flex-direction: row;
+  }
+
+  .xmd\:gap-12 {
+    gap: 3rem;
   }
 }
 @media (min-width: 640px) {
