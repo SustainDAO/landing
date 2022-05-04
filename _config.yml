@@ -27,12 +27,7 @@ sass:
   style: compressed
 postcss:
   cache: false
-paginate: 6
-paginate_path: "/articles/page:num/"
+paginate: 12
+paginate_path: "/articles/page/:num/"
 permalink: /:categories/:year/:month/:day/:title.html
-
-header_pages:
-  - index.md
-  - news.md
-
 exclude: ['node_modules']
