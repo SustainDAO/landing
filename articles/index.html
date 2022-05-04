@@ -28,10 +28,10 @@ pagination:
             </div>
             {%- endfor -%}
         </div>
-        <div class="pagination flex items-center justify-center gap-12 text-white mt-10 tablet:mt-20">
+        <div class="pagination flex items-center justify-center gap-6 xmd:gap-12 text-white mt-10 tablet:mt-20">
             {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}"
-                class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative">
+                class="previous w-10 h-10 xmd:w-16 xmd:h-16 rounded-full flex justify-center border border-gray items-center relative">
             </a>
             {% else %}
             <span
@@ -40,17 +40,15 @@ pagination:
             {% if paginator.page_trail %}
             {% for trail in paginator.page_trail %}
             <div {% if page.url==trail.path %}class="page-active" {% endif %}>
-                <a class="font-extrabold" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
+                <a class="font-extrabold" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{
+                    trail.num }}</a>
             </div>
             {% endfor %}
             {% endif %}
             {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}"
-                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
-                {% else %}
-                <span
-                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
-                {% endif %}
+            <a href="{{ paginator.next_page_path }}"
+                class="next w-10 h-10 xmd:w-16 xmd:h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
+            {% endif %}
         </div>
     </div>
 </section>

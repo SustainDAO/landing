@@ -52,7 +52,6 @@
   a {
     &.next::before,
     &.previous::before {
-      @include graidentBorder(#1f1f1f);
       border-left: none;
       border-bottom: none;
     }

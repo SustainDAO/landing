@@ -32,7 +32,7 @@ pagination:
   enabled: true
   debug: false
   collection: 'posts'
-  per_page: 3
+  per_page: 9
   permalink: '/page:num/'
   title: ':title - page :num'
   limit: 0
