@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: articles
 title: Articles
+pagination:
+    enabled: true
 ---
 
 <section class="articles mt-36">
@@ -14,7 +16,8 @@ title: Articles
                         <p
                             class="text-sm font-semibold leading-5 tablet:text-base desktop:text-2xl tablet:leading-8 mb-4 tablet:mb-0 desktop:mb-8">
                             {{post.date | date: "%B %e, %Y"}}</p>
-                        <h1 class="text-2xl font-bold font-display-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
+                        <h1
+                            class="text-2xl font-bold font-display-bold leading-9 tablet:text-4xl desktop:text-4.5xl tablet:leading-12">
                             {{ post.title | strip_html |
                             truncate: 20 }}</h1>
                         <article
@@ -25,32 +28,27 @@ title: Articles
             </div>
             {%- endfor -%}
         </div>
-        <div class="pagination flex items-center justify-center text-white mt-10 tablet:mt-20">
-            <div class="page_number flex gap-2 items-center">
-                {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}"
-                    class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative">
-                </a>
-                {% else %}
-                <span
-                    class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
-                {% endif %}
-                <div class="flex justify-between items-center gap-10 font-extrabold text-lg">
-                    <div class="page-active w-16 h-16 flex items-center justify-center rounded-full"> {{ paginator.page
-                        }} </div>
-                    <span>of</span>
-                    <div class="total-pages rounded-full flex items-center justify-center w-16 h-16">
-                        <p>{{ paginator.total_pages }}</p>
-                    </div>
-                </div>
-                {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}"
-                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
-                {% else %}
-                <span
-                    class="next w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
-                {% endif %}
+        <div class="pagination flex items-center justify-center gap-6 xmd:gap-12 text-white mt-10 tablet:mt-20">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}"
+                class="previous w-10 h-10 xmd:w-16 xmd:h-16 rounded-full flex justify-center border border-gray items-center relative">
+            </a>
+            {% else %}
+            <span
+                class="previous w-16 h-16 rounded-full flex justify-center border border-gray items-center relative text-gray"></span>
+            {% endif %}
+            {% if paginator.page_trail %}
+            {% for trail in paginator.page_trail %}
+            <div {% if page.url==trail.path %}class="page-active" {% endif %}>
+                <a class="font-extrabold" href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{
+                    trail.num }}</a>
             </div>
+            {% endfor %}
+            {% endif %}
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}"
+                class="next w-10 h-10 xmd:w-16 xmd:h-16 rounded-full flex justify-center border border-gray items-center relative"></a>
+            {% endif %}
         </div>
     </div>
 </section>
