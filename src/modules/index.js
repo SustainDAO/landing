@@ -126,11 +126,15 @@ document.addEventListener("DOMContentLoaded", () => {
             btc.style.animation = 'slide-left 2s';
             btc.style.marginLeft = '0';
           }
-          let union = entry.target.querySelector('.union-animation');
-          if(union){
-            union.style.animation = 'slide-right 1.5s';
-            union.style.marginLeft = '0';
-          }
+          let union = entry.target.querySelector('.union-animation img');
+          // if(union){
+          //   union.style.animation = 'slide-right 1.5s';
+          //   union.style.marginLeft = '0';
+          // }
+          window.addEventListener('scroll', () => {
+            let theta = window.scrollY / 3;
+            union.style.transform = `rotate(${theta}deg)`
+          })
           countUp(`.${entry.target.classList[0]}`)
           observer.unobserve(entry.target)
         }
