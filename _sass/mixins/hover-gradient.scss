@@ -28,8 +28,8 @@
     }
     &:hover {
         border-width: 0px;
-        // background-image: none;
-        border:none;
+        background-clip: unset;
+        border: none;
         transition: 0.5s;
         &::before {
             top: 0;

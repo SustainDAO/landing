@@ -10,10 +10,10 @@
     border-radius: 40px;
   }
 }
-.article-btn{
+.article-btn {
   transition: 0.4s ease;
-  &:hover{
-    transform: scale(1.05)
+  &:hover {
+    transform: scale(1.05);
   }
 }
 .post-content,
@@ -25,15 +25,8 @@
 .pagination {
   .page-active {
     background: linear-gradient(213.12deg, #abe581 26.52%, #8cdbe2 111.08%);
-  }
-
-  .total-pages {
-    @include graidentBorder(#1f1f1f);
-    p {
-      background-image: linear-gradient(#abe581 26%, #8cdbe2 111.08%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .previous,
   .next {
@@ -58,7 +51,6 @@
   a {
     &.next::before,
     &.previous::before {
-      @include graidentBorder(#1f1f1f);
       border-left: none;
       border-bottom: none;
     }
