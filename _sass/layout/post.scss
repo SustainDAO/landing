@@ -24,11 +24,10 @@
 
 .pagination {
   .page-active {
-    background-image: linear-gradient(#abe581 26%, #8cdbe2 111.08%);
+    background: linear-gradient(213.12deg, #abe581 26.52%, #8cdbe2 111.08%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   .previous,
   .next {
     &::before {
