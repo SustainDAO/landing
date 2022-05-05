@@ -6,7 +6,8 @@ module.exports = {
     './_posts/*.html',
     './articles/**/*.html',
     './article/**/*.html',
-    './*.html'
+    './*.html',
+    "./src/**/*.{html,js}"
   ],
   darkMode: 'class',
   theme: {
@@ -19,6 +20,8 @@ module.exports = {
       'black-smoke': '#2B2B2B',
       'black-main':'#1f1f1f',
       'gray-light': '#464646',
+      'gray-jo':'#D9D9D9',
+      'gray-bold':'#6E767D',
       'transparent':'transparent'
     },
     minWidth: {
